@@ -1,0 +1,89 @@
+jugadores{
+	display: table;
+	border-spacing: 1px;
+}
+jugador{
+	display: table-row;
+	width: 100%;
+
+}
+apodo{
+	display: table-cell;
+	text-align: center;
+	background-color: skyblue;
+	border: solid black 2px;
+	width: 12%; 
+}
+nombre{
+	display: table-cell;
+	text-align: center;
+	background-color: green;
+	border: solid black 2px;
+	width: 12%; 
+}
+dorsal{
+	display: table-cell;
+	text-align: center;
+	background-color: coral;
+	border: solid black 2px;
+	width: 3%; 
+}
+posicion, equipoproc{
+	display: table-cell;
+	text-align: left;
+	background-color: orangered;
+	color: black;
+	border: solid black 2px;
+	width: 13%; 
+}
+fechanac, equipoactual{
+	display: table-cell;
+	text-align: left;
+	background-color: skyblue;
+	border: solid black 2px;
+	width: 10%; 
+}
+edad, partidosjugados{
+	display: table-cell;
+	text-align: center;
+	background-color: green;
+	border: solid black 2px;
+	width: 2%; 
+}
+nacionalidad{
+	display: table-cell;
+	text-align: center;
+	background-color: coral;
+	border: solid black 2px;
+	width: 8%; 
+}
+
+minutosjugados , asistencias{
+	display: table-cell;
+	text-align: center;
+	background-color: coral;
+	border: solid black 2px;
+	width: 10% 
+}
+partidosjugadostitular, goles{
+	display: table-cell;
+	text-align: center;
+	background-color: orangered;
+	color: black;
+	border: solid black 2px;
+	width: 2%; 
+}
+tarjetasamarillas{
+	display: table-cell;
+	text-align: center;
+	background-color: skyblue;
+	border: solid black 2px;
+	width: 2%; 
+}
+tarjetasrojas{
+	display: table-cell;
+	text-align: center;
+	background-color: green;
+	border: solid black 2px;
+	width: 2%;
+}

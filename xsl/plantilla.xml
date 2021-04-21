@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="plantilla.xsl"?>
+<!DOCTYPE plantilla [
+<!ELEMENT plantilla (componente)+>
+<!ELEMENT componente (dorsal, nombre, apellidos, apodo, posicion, edad, sueldo)>
+<!ELEMENT dorsal (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT apodo (#PCDATA)>
+<!ELEMENT posicion (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT sueldo (#PCDATA)>
+]>
+<plantilla>
+	<componente>
+		<dorsal>1</dorsal>
+		<nombre>Iker</nombre>
+		<apellidos>Casillas</apellidos>
+		<apodo>El santo</apodo>
+		<posicion>Portero</posicion>
+		<edad>40</edad>
+		<sueldo>3000000</sueldo>
+	</componente>
+	<componente>
+		<dorsal>2</dorsal>
+		<nombre>Michel</nombre>
+		<apellidos>Salgado</apellidos>
+		<apodo>Salgado</apodo>
+		<posicion>Portero</posicion>
+		<edad>40</edad>
+		<sueldo>3000000</sueldo>
+	</componente>
+	<componente>
+		<dorsal>3</dorsal>
+		<nombre>Roberto Carlos</nombre>
+		<apellidos>Nascimentos Do Natal</apellidos>
+		<apodo>Roberto</apodo>
+		<posicion>Lateral Izquierdo</posicion>
+		<edad>40</edad>
+		<sueldo>3000000</sueldo>
+	</componente>
+</plantilla>

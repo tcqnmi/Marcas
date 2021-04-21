@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="Practica1.1.css"?>
+
+<!DOCTYPE jugadores [
+	<!ELEMENT jugadores (jugador+)>
+	<!ELEMENT jugador (apodo, nombre, dorsal, posicion, fechanac, edad, nacionalidad, equipoproc, equipoactual, partidosjugados, minutosjugados, partidosjugadostitular, tarjetasamarillas, tarjetasrojas, asistencias, goles)>
+	<!ATTLIST jugador idjugador ID #REQUIRED>
+	<!ELEMENT apodo (#PCDATA)>
+	
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT dorsal (#PCDATA)>
+	<!ELEMENT posicion (#PCDATA)>
+	<!ELEMENT fechanac (#PCDATA)>
+	<!ELEMENT edad (#PCDATA)>
+	<!ELEMENT nacionalidad (#PCDATA)>
+	<!ELEMENT equipoproc (#PCDATA)>
+	<!ELEMENT equipoactual (#PCDATA)>
+	<!ELEMENT partidosjugados (#PCDATA)>
+	<!ELEMENT minutosjugados (#PCDATA)>
+	<!ELEMENT partidosjugadostitular (#PCDATA)>
+	<!ELEMENT tarjetasamarillas (#PCDATA)>
+	<!ELEMENT tarjetasrojas (#PCDATA)>
+	<!ELEMENT asistencias (#PCDATA)>
+	<!ELEMENT goles (#PCDATA)>
+]>
+
+<jugadores>
+
+	<jugador idjugador="JUG16001">
+		<apodo>Javi Galán</apodo>
+		<nombre>Javier Galán Gil</nombre>
+		<dorsal>11</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>19-11-1994</fechanac>
+		<edad>26</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>SD Huesca</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>28</partidosjugados>
+		<minutosjugados>2367</minutosjugados>
+		<partidosjugadostitular>26</partidosjugadostitular>
+		<tarjetasamarillas>4</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>2</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG16002">
+		<apodo>Maffeo</apodo>
+		<nombre>Pablo Maffeo</nombre>
+		<dorsal>3</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>12-07-1997</fechanac>
+		<edad>23</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>VfB Stuttgart</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>19</partidosjugados>
+		<minutosjugados>1565</minutosjugados>
+		<partidosjugadostitular>19</partidosjugadostitular>
+		<tarjetasamarillas>4</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>4</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG16003">
+		<apodo>Siovas</apodo>
+		<nombre>Dimitrios Siovas</nombre>
+		<dorsal>18</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>16-09-1988</fechanac>
+		<edad>32</edad>
+		<nacionalidad>Grecia</nacionalidad>
+		<equipoproc>Leganes</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>27</partidosjugados>
+		<minutosjugados>2430</minutosjugados>
+		<partidosjugadostitular>27</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>2</goles>
+	</jugador>
+	<jugador idjugador="JUG16004">
+		<apodo>Ontiveros</apodo>
+		<nombre>Javier Ontiveros</nombre>
+		<dorsal>15</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>09-09-1997</fechanac>
+		<edad>23</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Villareal</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>20</partidosjugados>
+		<minutosjugados>915</minutosjugados>
+		<partidosjugadostitular>10</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>2</goles>
+	</jugador>
+	<jugador idjugador="JUG16005">
+		<apodo>Rafa Mir</apodo>
+		<nombre>Rafael Mir Vicente</nombre>
+		<dorsal>9</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>18-06-1997</fechanac>
+		<edad>23</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Nottingham Forest</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>28</partidosjugados>
+		<minutosjugados>2007</minutosjugados>
+		<partidosjugadostitular>22</partidosjugadostitular>
+		<tarjetasamarillas>2</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>8</goles>
+	</jugador>
+	<jugador idjugador="JUG16006">
+		<apodo>Ramírez</apodo>
+		<nombre>Sandro Ramírez</nombre>
+		<dorsal>6</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>09-07-1995</fechanac>
+		<edad>25</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Real Valladolid</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>10</partidosjugados>
+		<minutosjugados>567</minutosjugados>
+		<partidosjugadostitular>7</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>3</goles>
+	</jugador>
+	<jugador idjugador="JUG16007">
+		<apodo>Ferreiro</apodo>
+		<nombre>David Ferreiro</nombre>
+		<dorsal>7</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>01-04-1988</fechanac>
+		<edad>32</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>SD Huesca</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>27</partidosjugados>
+		<minutosjugados>1778</minutosjugados>
+		<partidosjugadostitular>20</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>2</asistencias>
+		<goles>2</goles>
+	</jugador>
+	<jugador idjugador="JUG16008">
+		<apodo>López</apodo>
+		<nombre>Pedro López</nombre>
+		<dorsal>19</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>01-11-1983</fechanac>
+		<edad>37</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Levante</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>12</partidosjugados>
+		<minutosjugados>669</minutosjugados>
+		<partidosjugadostitular>7</partidosjugadostitular>
+		<tarjetasamarillas>2</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG16009">
+		<apodo>Jorge Pulido</apodo>
+		<nombre>Jorge Pulido</nombre>
+		<dorsal>14</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>08-04-1991</fechanac>
+		<edad>29</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>SD Huesca</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>24</partidosjugados>
+		<minutosjugados>2076</minutosjugados>
+		<partidosjugadostitular>23</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>1</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+
+	<jugador idjugador="JUG16010">
+		<apodo>Pedro Mosquera</apodo>
+		<nombre>Pedro Mosquera</nombre>
+		<dorsal>5</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>21-04-1988</fechanac>
+		<edad>32</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Deportivo La Coruña</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>18</partidosjugados>
+		<minutosjugados>1609</minutosjugados>
+		<partidosjugadostitular>18</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG16011">
+		<apodo>Álvaro Fernández</apodo>
+		<nombre>Álvaro Fernández</nombre>
+		<dorsal>1</dorsal>
+		<posicion>Portero</posicion>
+		<fechanac>13-04-1998</fechanac>
+		<edad>22</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Osasuna</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>16</partidosjugados>
+		<minutosjugados>1440</minutosjugados>
+		<partidosjugadostitular>16</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG16012">
+		<apodo>Ínsua</apodo>
+		<nombre>Pablo Ínsua</nombre>
+		<dorsal>4</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>09-09-1993</fechanac>
+		<edad>27</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>SD Huesca</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>15</partidosjugados>
+		<minutosjugados>1165</minutosjugados>
+		<partidosjugadostitular>12</partidosjugadostitular>
+		<tarjetasamarillas>9</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG16013">
+		<apodo>Borja García</apodo>
+		<nombre>Borja García</nombre>
+		<dorsal>24</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>02-11-1990</fechanac>
+		<edad>30</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Girona</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>18</partidosjugados>
+		<minutosjugados>1104</minutosjugados>
+		<partidosjugadostitular>13</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG16014">
+		<apodo>Mikel Rico</apodo>
+		<nombre>Mikel Rico</nombre>
+		<dorsal>17</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>04-11-1984</fechanac>
+		<edad>36</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Athletic Bilbao</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>23</partidosjugados>
+		<minutosjugados>1718</minutosjugados>
+		<partidosjugadostitular>21</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>2</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG16015">
+		<apodo>Jaime Seoane</apodo>
+		<nombre>Jaime Seoane</nombre>
+		<dorsal>20</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>22-01-1997</fechanac>
+		<edad>23</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>SD Huesca</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>21</partidosjugados>
+		<minutosjugados>1408</minutosjugados>
+		<partidosjugadostitular>15</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG16016">
+		<apodo>Eugeni Valderrama</apodo>
+		<nombre>Eugeni Valderrama</nombre>
+		<dorsal>8</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>19-07-1994</fechanac>
+		<edad>26</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>SD Huesca</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>3</partidosjugados>
+		<minutosjugados>114</minutosjugados>
+		<partidosjugadostitular>1</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG16017">
+		<apodo>Gastón Silva</apodo>
+		<nombre>Gastón Silva</nombre>
+		<dorsal>22</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>05-03-1994</fechanac>
+		<edad>27</edad>
+		<nacionalidad>Uruguay</nacionalidad>
+		<equipoproc>Independiente</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>8</partidosjugados>
+		<minutosjugados>409</minutosjugados>
+		<partidosjugadostitular>5</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG16018">
+		<apodo>Andres Fernandez</apodo>
+		<nombre>Andres Fernandez</nombre>
+		<dorsal>13</dorsal>
+		<posicion>Portero</posicion>
+		<fechanac>17-12-1986</fechanac>
+		<edad>34</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Villareal</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>13</partidosjugados>
+		<minutosjugados>1170</minutosjugados>
+		<partidosjugadostitular>13</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG16019">
+		<apodo>Dani Escriche</apodo>
+		<nombre>Daniel Escriche</nombre>
+		<dorsal>23</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>24-03-1998</fechanac>
+		<edad>23</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>SD Huesca</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>17</partidosjugados>
+		<minutosjugados>626</minutosjugados>
+		<partidosjugadostitular>6</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG16020">
+		<apodo>Shinji Okazaki</apodo>
+		<nombre>Shinji Okazaki</nombre>
+		<dorsal>12</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>16-04-1686</fechanac>
+		<edad>34</edad>
+		<nacionalidad>Japon</nacionalidad>
+		<equipoproc>Japan</equipoproc>
+		<equipoactual>SD Huesca</equipoactual>
+		<partidosjugados>21</partidosjugados>
+		<minutosjugados>1042</minutosjugados>
+		<partidosjugadostitular>13</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>1</goles>
+	</jugador>
+</jugadores>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="jugadores.xsl"?>
+<!DOCTYPE jugadores [
+	<!ELEMENT jugadores (jugador+)>
+	<!ELEMENT jugador (apodo, nombre, dorsal, posicion, fechanac, edad, nacionalidad, equipoproc, equipoactual, partidosjugados, minutosjugados, partidosjugadostitular, tarjetasamarillas, tarjetasrojas, asistencias, goles)>
+	<!ATTLIST jugador idjugador ID #REQUIRED>
+	<!ELEMENT apodo (#PCDATA)>
+	
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT dorsal (#PCDATA)>
+	<!ELEMENT posicion (#PCDATA)>
+	<!ELEMENT fechanac (#PCDATA)>
+	<!ELEMENT edad (#PCDATA)>
+	<!ELEMENT nacionalidad (#PCDATA)>
+	<!ELEMENT equipoproc (#PCDATA)>
+	<!ELEMENT equipoactual (#PCDATA)>
+	<!ELEMENT partidosjugados (#PCDATA)>
+	<!ELEMENT minutosjugados (#PCDATA)>
+	<!ELEMENT partidosjugadostitular (#PCDATA)>
+	<!ELEMENT tarjetasamarillas (#PCDATA)>
+	<!ELEMENT tarjetasrojas (#PCDATA)>
+	<!ELEMENT asistencias (#PCDATA)>
+	<!ELEMENT goles (#PCDATA)>
+]>
+
+<jugadores>
+	<jugador idjugador="JUG0001">
+		<apodo>Trippier</apodo>
+		<nombre>Kieran Trippier</nombre>
+		<dorsal>23</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>19-09-1990</fechanac>
+		<edad>30</edad>
+		<nacionalidad>Inglaterra</nacionalidad>
+		<equipoproc>Tottenham</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>31</partidosjugados>
+		<minutosjugados>2654</minutosjugados>
+		<partidosjugadostitular>31</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>7</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0002">
+		<apodo>Suárez</apodo>
+		<nombre>Luis Suárez</nombre>
+		<dorsal>9</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>24-01-1987</fechanac>
+		<edad>34</edad>
+		<nacionalidad>Uruguay</nacionalidad>
+		<equipoproc>F.C.Barcelona</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>31</partidosjugados>
+		<minutosjugados>2428</minutosjugados>
+		<partidosjugadostitular>30</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>2</asistencias>
+		<goles>19</goles>
+	</jugador>
+	<jugador idjugador="JUG0003">
+		<apodo>Llorente</apodo>
+		<nombre>Marcos Llorente</nombre>
+		<dorsal>14</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>30-01-1995</fechanac>
+		<edad>26</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Real Madrid</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>37</partidosjugados>
+		<minutosjugados>2829</minutosjugados>
+		<partidosjugadostitular>32</partidosjugadostitular>
+		<tarjetasamarillas>6</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>9</asistencias>
+		<goles>10</goles>
+	</jugador>
+	<jugador idjugador="JUG0004">
+		<apodo>Carrasco</apodo>
+		<nombre>Yannick Carrasco</nombre>
+		<dorsal>21</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>04-09-1993</fechanac>
+		<edad>27</edad>
+		<nacionalidad>Bélgica</nacionalidad>
+		<equipoproc>Dalian Professional FC</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>29</partidosjugados>
+		<minutosjugados>2020</minutosjugados>
+		<partidosjugadostitular>24</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>5</asistencias>
+		<goles>3</goles>
+	</jugador>
+	<jugador idjugador="JUG0005">
+		<apodo>Koke</apodo>
+		<nombre>Jorge Resurrección</nombre>
+		<dorsal>6</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>08-01-1992</fechanac>
+		<edad>29</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Atletico de Madrid B</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>38</partidosjugados>
+		<minutosjugados>2992</minutosjugados>
+		<partidosjugadostitular>34</partidosjugadostitular>
+		<tarjetasamarillas>10</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>2</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG0006">
+		<apodo>Savic</apodo>
+		<nombre>Stefan Savic</nombre>
+		<dorsal>15</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>08-01-1991</fechanac>
+		<edad>30</edad>
+		<nacionalidad>Montenegro</nacionalidad>
+		<equipoproc>Fiorentina</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>36</partidosjugados>
+		<minutosjugados>3231</minutosjugados>
+		<partidosjugadostitular>36</partidosjugadostitular>
+		<tarjetasamarillas>17</tarjetasamarillas>
+		<tarjetasrojas>1</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0007">
+		<apodo>Hermoso</apodo>
+		<nombre>Mario Hermoso</nombre>
+		<dorsal>22</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>18-06-1995</fechanac>
+		<edad>25</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Espanyol</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>29</partidosjugados>
+		<minutosjugados>2380</minutosjugados>
+		<partidosjugadostitular>23</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>2</goles>
+	</jugador>
+	<jugador idjugador="JUG0008">
+		<apodo>Lemar</apodo>
+		<nombre>Thomas Lemar</nombre>
+		<dorsal>11</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>12-11-1995</fechanac>
+		<edad>25</edad>
+		<nacionalidad>Francia</nacionalidad>
+		<equipoproc>Monaco</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>31</partidosjugados>
+		<minutosjugados>1388</minutosjugados>
+		<partidosjugadostitular>17</partidosjugadostitular>
+		<tarjetasamarillas>4</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>4</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG0009">
+		<apodo>João Félix</apodo>
+		<nombre>João Félix Sequeira</nombre>
+		<dorsal>7</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>10-11-1999</fechanac>
+		<edad>21</edad>
+		<nacionalidad>Portugal</nacionalidad>
+		<equipoproc>Benfica</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>40</partidosjugados>
+		<minutosjugados>2573</minutosjugados>
+		<partidosjugadostitular>27</partidosjugadostitular>
+		<tarjetasamarillas>6</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>5</asistencias>
+		<goles>13</goles>
+	</jugador>
+
+	<jugador idjugador="JUG0010">
+		<apodo>Oblak</apodo>
+		<nombre>Jan Oblak</nombre>
+		<dorsal>13</dorsal>
+		<posicion>Portero</posicion>
+		<fechanac>07-01-1993</fechanac>
+		<edad>28</edad>
+		<nacionalidad>Eslovenia</nacionalidad>
+		<equipoproc>Benfica</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>41</partidosjugados>
+		<minutosjugados>3690</minutosjugados>
+		<partidosjugadostitular>41</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0011">
+		<apodo>Correa</apodo>
+		<nombre>Ángel Correa</nombre>
+		<dorsal>10</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>09-03-1995</fechanac>
+		<edad>26</edad>
+		<nacionalidad>Argentina</nacionalidad>
+		<equipoproc>C.A. San Lorenzo de Almagro</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>36</partidosjugados>
+		<minutosjugados>2164</minutosjugados>
+		<partidosjugadostitular>25</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>8</asistencias>
+		<goles>4</goles>
+	</jugador>
+	<jugador idjugador="JUG0012">
+		<apodo>Felipe</apodo>
+		<nombre>Felipe Augusto de Almeida</nombre>
+		<dorsal>18</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>16-05-1989</fechanac>
+		<edad>31</edad>
+		<nacionalidad>Brasil</nacionalidad>
+		<equipoproc>Porto</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>27</partidosjugados>
+		<minutosjugados>1868</minutosjugados>
+		<partidosjugadostitular>21</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0013">
+		<apodo>Giménez</apodo>
+		<nombre>José Giménez</nombre>
+		<dorsal>2</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>20-01-1995</fechanac>
+		<edad>26</edad>
+		<nacionalidad>Uruguay</nacionalidad>
+		<equipoproc>Danubio F. C.</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>19</partidosjugados>
+		<minutosjugados>1572</minutosjugados>
+		<partidosjugadostitular>18</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG0014">
+		<apodo>Saúl</apodo>
+		<nombre>Saúl Ñíguez</nombre>
+		<dorsal>8</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>21-11-1994</fechanac>
+		<edad>26</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Rayo Vallecano</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>29</partidosjugados>
+		<minutosjugados>1816</minutosjugados>
+		<partidosjugadostitular>20</partidosjugadostitular>
+		<tarjetasamarillas>9</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>2</goles>
+	</jugador>
+	<jugador idjugador="JUG0015">
+		<apodo>Renan Lodi</apodo>
+		<nombre>Renan Augusto Lodi dos Santos</nombre>
+		<dorsal>12</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>08-04-1998</fechanac>
+		<edad>22</edad>
+		<nacionalidad>Brasil</nacionalidad>
+		<equipoproc>Athletico Paranaense</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>23</partidosjugados>
+		<minutosjugados>1134</minutosjugados>
+		<partidosjugadostitular>12</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>2</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0016">
+		<apodo>Vrsaljko</apodo>
+		<nombre>Sime Vrsaljko</nombre>
+		<dorsal>24</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>10-01-1992</fechanac>
+		<edad>29</edad>
+		<nacionalidad>Croacia</nacionalidad>
+		<equipoproc>Inter</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>8</partidosjugados>
+		<minutosjugados>509</minutosjugados>
+		<partidosjugadostitular>6</partidosjugadostitular>
+		<tarjetasamarillas>2</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0017">
+		<apodo>Herrera</apodo>
+		<nombre>Héctor Herrera</nombre>
+		<dorsal>16</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>19-04-1990</fechanac>
+		<edad>30</edad>
+		<nacionalidad>Mexico</nacionalidad>
+		<equipoproc>Porto</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>17</partidosjugados>
+		<minutosjugados>680</minutosjugados>
+		<partidosjugadostitular>10</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0018">
+		<apodo>Kondogbia</apodo>
+		<nombre>Geoffrey Kondogbia</nombre>
+		<dorsal>4</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>15-02-1993</fechanac>
+		<edad>28</edad>
+		<nacionalidad>República Centroafricana</nacionalidad>
+		<equipoproc>Valencia</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>23</partidosjugados>
+		<minutosjugados>858</minutosjugados>
+		<partidosjugadostitular>9</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0019">
+		<apodo>Torreira</apodo>
+		<nombre>Lucas Torreira</nombre>
+		<dorsal>5</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>11-02-1996</fechanac>
+		<edad>25</edad>
+		<nacionalidad>Uruguay</nacionalidad>
+		<equipoproc>Arsenal</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>20</partidosjugados>
+		<minutosjugados>453</minutosjugados>
+		<partidosjugadostitular>3</partidosjugadostitular>
+		<tarjetasamarillas>2</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG0020">
+		<apodo>Vitolo</apodo>
+		<nombre>Víctor Machín Pérez</nombre>
+		<dorsal>20</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>02-11-1989</fechanac>
+		<edad>31</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Sevilla</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>10</partidosjugados>
+		<minutosjugados>264</minutosjugados>
+		<partidosjugadostitular>3</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG0021">
+		<apodo>Dembele</apodo>
+		<nombre>Moussa Dembele</nombre>
+		<dorsal>19</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>12-07-1996</fechanac>
+		<edad>24</edad>
+		<nacionalidad>Francia</nacionalidad>
+		<equipoproc>Lyon</equipoproc>
+		<equipoactual>Atletico de Madrid</equipoactual>
+		<partidosjugados>20</partidosjugados>
+		<minutosjugados>758</minutosjugados>
+		<partidosjugadostitular>6</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+</jugadores>

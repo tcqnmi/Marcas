@@ -1,0 +1,47 @@
+jugadores {
+    display: table;
+}
+table{
+	border-spacing: 0;
+}
+th{
+	background-color: grey;
+	border: solid black 1px;
+}
+
+jugador {
+    display: table-row;
+    width: 100%;
+}
+
+nombre, posicion, fechanac, edad, nacionalidad, equipoproc, equipoactual {
+    display: table-cell;
+    border:solid black 1px;
+    vertical-align: middle;
+
+}
+partidosjugados, minutosjugados, partidosjugadostitular, tarjetasamarillas, tarjetasrojas, asistencias, goles{
+	display: table-cell;
+    border:solid black 1px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+apodo,dorsal {
+    display: table-cell;
+    border:solid black 1px;
+    text-align: center;
+}
+.par{
+	background-color: lightskyblue;
+	color: black;
+	font-weight: bold;
+}
+.impar{
+	background-color: darkred;
+	color: white;
+	font-weight: bold;
+}
+h1{
+	text-align: center;
+}

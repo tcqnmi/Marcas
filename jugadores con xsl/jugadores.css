@@ -1,0 +1,41 @@
+html{
+	font-size: 15pt;
+}
+h1{
+	color: red;
+	text-align: center;
+}
+table{
+	
+	
+}
+.table2{
+	width: 100%;
+}
+td{
+	border: solid black 1px;
+}
+th{
+	border: solid black 1px;
+	background-color: grey;
+}
+.apodo{
+	text-align: center;
+	background-color: skyblue;
+}
+.nombre{
+	text-align: center;
+	background-color: lightgreen;
+}
+.dorsal{
+	text-align: center;
+	background-color: rosybrown;
+}
+.posicion{
+	text-align: center;
+	background-color: salmon;
+}
+.joao{
+	text-align: center;
+	background-color: violet;
+}

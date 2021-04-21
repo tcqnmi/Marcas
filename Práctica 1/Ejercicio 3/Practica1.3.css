@@ -1,0 +1,42 @@
+html{
+	font-size: 12pt;
+}
+table{
+	width: 100%;
+	border-spacing: 0;
+	display: table-row;
+}
+h1{
+	color: black;
+	font-weight: bold;
+}
+th{
+	color: black;
+	background-color: lightgrey;
+	border: solid black 1px;
+}
+td{
+	border: solid black 1px;
+}
+.impar{
+	text-align: center;
+	background-color: skyblue;
+	border: solid black 2px; 
+}
+.par{
+	
+	text-align: center;
+	background-color: violet;
+	border: solid black 2px;
+	
+}
+.pablo{
+	text-align: center;
+	background-color: coral;
+	border: solid black 2px;
+}
+.javier{
+	text-align: center;
+	background-color: lightgreen;
+	border: solid black 2px;
+}

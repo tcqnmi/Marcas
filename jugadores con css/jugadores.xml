@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="jugadores.css"?>
+
+
+<!DOCTYPE jugadores [
+	<!ELEMENT jugadores (jugador+)>
+	<!ELEMENT jugador (apodo, nombre, dorsal, posicion, fechanac, edad, nacionalidad, equipoproc, equipoactual, partidosjugados, minutosjugados, partidosjugadostitular, tarjetasamarillas, tarjetasrojas, asistencias, goles)>
+	<!ATTLIST jugador idjugador ID #REQUIRED>
+	<!ELEMENT apodo (#PCDATA)>
+	
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT dorsal (#PCDATA)>
+	<!ELEMENT posicion (#PCDATA)>
+	<!ELEMENT fechanac (#PCDATA)>
+	<!ELEMENT edad (#PCDATA)>
+	<!ELEMENT nacionalidad (#PCDATA)>
+	<!ELEMENT equipoproc (#PCDATA)>
+	<!ELEMENT equipoactual (#PCDATA)>
+	<!ELEMENT partidosjugados (#PCDATA)>
+	<!ELEMENT minutosjugados (#PCDATA)>
+	<!ELEMENT partidosjugadostitular (#PCDATA)>
+	<!ELEMENT tarjetasamarillas (#PCDATA)>
+	<!ELEMENT tarjetasrojas (#PCDATA)>
+	<!ELEMENT asistencias (#PCDATA)>
+	<!ELEMENT goles (#PCDATA)>
+]>
+
+<jugadores xmlns="http://www.w3.org/1999/xhtml">
+<h1>Plantilla del Celta de Vigo</h1>
+<table>
+	<tr>
+		<th>Apodo</th>
+		<th>Nombre</th>
+		<th>Dorsal</th>
+		<th>Posicion</th>
+		<th>Fechanac</th>
+		<th>Edad</th>
+		<th>Procedencia</th>
+		<th>Actual</th>
+		<th>Partidos jugados</th>
+		<th>Min jugados</th>
+		<th>Partidos titular</th>
+		<th>Amarillas</th>
+		<th>Rojas</th>
+		<th>Asistencias</th>
+		<th>Goles</th>
+	</tr>
+	<jugador idjugador="JUG10001" class="impar">
+		<apodo>Iago</apodo>
+		<nombre>Iago Aspas</nombre>
+		<dorsal>10</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>01-08-1987</fechanac>
+		<edad>33</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Liverpool</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>24</partidosjugados>
+		<minutosjugados>2101</minutosjugados>
+		<partidosjugadostitular>24</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>8</asistencias>
+		<goles>9</goles>
+	</jugador>
+	<jugador idjugador="JUG10002" class="par">
+		<apodo>Renato</apodo>
+		<nombre>Reanto Tapia</nombre>
+		<dorsal>14</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>28-07-1995</fechanac>
+		<edad>25</edad>
+		<nacionalidad>Perú</nacionalidad>
+		<equipoproc>Freyenoord</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>26</partidosjugados>
+		<minutosjugados>2231</minutosjugados>
+		<partidosjugadostitular>26</partidosjugadostitular>
+		<tarjetasamarillas>11</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10003" class="impar">
+		<apodo>Nolito</apodo>
+		<nombre>Manuel Agudo Durán</nombre>
+		<dorsal>9</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>15-10-1986</fechanac>
+		<edad>34</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Sevilla</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>25</partidosjugados>
+		<minutosjugados>1921</minutosjugados>
+		<partidosjugadostitular>25</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>4</asistencias>
+		<goles>5</goles>
+	</jugador>
+	<jugador idjugador="JUG10004" class="par">
+		<apodo>Hugo</apodo>
+		<nombre>Hugo Mallo</nombre>
+		<dorsal>2</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>22-06-1991</fechanac>
+		<edad>29</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>RC Celta B</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>25</partidosjugados>
+		<minutosjugados>2160</minutosjugados>
+		<partidosjugadostitular>24</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>2</goles>
+	</jugador>
+	<jugador idjugador="JUG10005" class="impar">
+		<apodo>Santi Mina</apodo>
+		<nombre>Santiago Mina Lorenzo</nombre>
+		<dorsal>22</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>07-12-1995</fechanac>
+		<edad>25</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Valencia</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>25</partidosjugados>
+		<minutosjugados>2992</minutosjugados>
+		<partidosjugadostitular>20</partidosjugadostitular>
+		<tarjetasamarillas>4</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>1</asistencias>
+		<goles>7</goles>
+	</jugador>
+	<jugador idjugador="JUG10006" class="par">
+		<apodo>Denis</apodo>
+		<nombre>Denis Suárez</nombre>
+		<dorsal>6</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>06-01-1994</fechanac>
+		<edad>27</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Barcelona</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>25</partidosjugados>
+		<minutosjugados>2011</minutosjugados>
+		<partidosjugadostitular>24</partidosjugadostitular>
+		<tarjetasamarillas>7</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>5</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10007" class="impar">
+		<apodo>Brais</apodo>
+		<nombre>Brais Méndez</nombre>
+		<dorsal>23</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>07-01-1997</fechanac>
+		<edad>24</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>RC Celta B</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>24</partidosjugados>
+		<minutosjugados>1829</minutosjugados>
+		<partidosjugadostitular>20</partidosjugadostitular>
+		<tarjetasamarillas>5</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>5</goles>
+	</jugador>
+	<jugador idjugador="JUG10008" class="par">
+		<apodo>Jeison</apodo>
+		<nombre>Jeison Murillo</nombre>
+		<dorsal>24</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>27-05-1992</fechanac>
+		<edad>28</edad>
+		<nacionalidad>Colombia</nacionalidad>
+		<equipoproc>Sampodria</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>26</partidosjugados>
+		<minutosjugados>2289</minutosjugados>
+		<partidosjugadostitular>26</partidosjugadostitular>
+		<tarjetasamarillas>7</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG10009" class="impar">
+		<apodo>Kevin</apodo>
+		<nombre>Kevin Vázquez</nombre>
+		<dorsal>20</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>23-03-1993</fechanac>
+		<edad>28</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>RC Celta B</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>1</partidosjugados>
+		<minutosjugados>90</minutosjugados>
+		<partidosjugadostitular>1</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+
+	<jugador idjugador="JUG10010" class="par">
+		<apodo>Augusto</apodo>
+		<nombre>Augusto Solari</nombre>
+		<dorsal>21</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>03-01-1992</fechanac>
+		<edad>29</edad>
+		<nacionalidad>Argentina</nacionalidad>
+		<equipoproc>Racing Club</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>8</partidosjugados>
+		<minutosjugados>259</minutosjugados>
+		<partidosjugadostitular>2</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>2</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10011" class="impar">
+		<apodo>Néstor</apodo>
+		<nombre>Néstor Araújo</nombre>
+		<dorsal>4</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>29-08-1991</fechanac>
+		<edad>29</edad>
+		<nacionalidad>México</nacionalidad>
+		<equipoproc>C.A. San Lorenzo de Almagro</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>26</partidosjugados>
+		<minutosjugados>1959</minutosjugados>
+		<partidosjugadostitular>21</partidosjugadostitular>
+		<tarjetasamarillas>4</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10012" class="par">
+		<apodo>Aarón</apodo>
+		<nombre>Aarón Martín</nombre>
+		<dorsal>19</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>22-04-1997</fechanac>
+		<edad>23</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>Mainz</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>9</partidosjugados>
+		<minutosjugados>796</minutosjugados>
+		<partidosjugadostitular>9</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10013" class="impar">
+		<apodo>Joseph</apodo>
+		<nombre>Joseph Aidoo</nombre>
+		<dorsal>18</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>29-09-1995</fechanac>
+		<edad>25</edad>
+		<nacionalidad>Ghana</nacionalidad>
+		<equipoproc>Ghana</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>19</partidosjugados>
+		<minutosjugados>858</minutosjugados>
+		<partidosjugadostitular>9</partidosjugadostitular>
+		<tarjetasamarillas>2</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10014" class="par">
+		<apodo>Emre</apodo>
+		<nombre>Emre Mor</nombre>
+		<dorsal>11</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>24-07-1997</fechanac>
+		<edad>23</edad>
+		<nacionalidad>Turquía</nacionalidad>
+		<equipoproc>RC Celta B</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>11</partidosjugados>
+		<minutosjugados>874</minutosjugados>
+		<partidosjugadostitular>9</partidosjugadostitular>
+		<tarjetasamarillas>1</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10015" class="impar">
+		<apodo>Fran</apodo>
+		<nombre>Fran Beltran</nombre>
+		<dorsal>8</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>03-02-1999</fechanac>
+		<edad>22</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>RC Celta B</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>24</partidosjugados>
+		<minutosjugados>858</minutosjugados>
+		<partidosjugadostitular>9</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10016" class="par">
+		<apodo>Jordan</apodo>
+		<nombre>Jordan Holsgrove</nombre>
+		<dorsal>39</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>10-09-1999</fechanac>
+		<edad>21</edad>
+		<nacionalidad>Escocia</nacionalidad>
+		<equipoproc>Reading</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>3</partidosjugados>
+		<minutosjugados>109</minutosjugados>
+		<partidosjugadostitular>0</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10017" class="impar">
+		<apodo>Alfon</apodo>
+		<nombre>Alfonso González Martínez</nombre>
+		<dorsal>36</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>04-05-1999</fechanac>
+		<edad>21</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>RC Celta B</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>2</partidosjugados>
+		<minutosjugados>33</minutosjugados>
+		<partidosjugadostitular>0</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>0</goles>
+	</jugador>
+	<jugador idjugador="JUG10018" class="par">
+		<apodo>Sergio</apodo>
+		<nombre>Sergio Carreira</nombre>
+		<dorsal>34</dorsal>
+		<posicion>Defensa</posicion>
+		<fechanac>13-10-2000</fechanac>
+		<edad>20</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>RC Celta B</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>3</partidosjugados>
+		<minutosjugados>261</minutosjugados>
+		<partidosjugadostitular>3</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG10019" class="impar">
+		<apodo>Miguel</apodo>
+		<nombre>Miguel Baeza</nombre>
+		<dorsal>27</dorsal>
+		<posicion>Centrocampista</posicion>
+		<fechanac>27-03-2000</fechanac>
+		<edad>20</edad>
+		<nacionalidad>España</nacionalidad>
+		<equipoproc>RC Celta B</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>18</partidosjugados>
+		<minutosjugados>285</minutosjugados>
+		<partidosjugadostitular>4</partidosjugadostitular>
+		<tarjetasamarillas>0</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+	<jugador idjugador="JUG10020" class="par">
+		<apodo>Facundo</apodo>
+		<nombre>Facundo Ferreyra</nombre>
+		<dorsal>12</dorsal>
+		<posicion>Delantero</posicion>
+		<fechanac>14-03-1991</fechanac>
+		<edad>30</edad>
+		<nacionalidad>Argentina</nacionalidad>
+		<equipoproc>Benfiza</equipoproc>
+		<equipoactual>RC Celta</equipoactual>
+		<partidosjugados>7</partidosjugados>
+		<minutosjugados>147</minutosjugados>
+		<partidosjugadostitular>1</partidosjugadostitular>
+		<tarjetasamarillas>3</tarjetasamarillas>
+		<tarjetasrojas>0</tarjetasrojas>
+		<asistencias>0</asistencias>
+		<goles>1</goles>
+	</jugador>
+	</table>
+</jugadores>

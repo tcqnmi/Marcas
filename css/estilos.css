@@ -1,0 +1,47 @@
+componente {
+	display: table-row;
+}
+dorsal{
+	display: table-cell;
+	border: solid green 2px;
+	font-size: 20pt;
+	background-color: cyan;
+	width: 5%;
+	text-align: center;
+}
+nombre{
+	display: table-cell;
+	border: solid black 2px;
+	background-color: darkgrey;
+	width: 200px;
+}
+apellidos{
+	display: table-cell;
+	border: solid red 2px;
+	background-color: pink;
+	width: 200px;
+}
+apodo{
+	display: table-cell;
+	border: solid orange 2px;
+	background-color: darkviolet;
+	width: 200px;
+}
+posicion{
+	display: table-cell;
+	border: solid black 2px;
+	background-color: violet;
+	width: 200px;
+}
+edad{
+	display: table-cell;
+	border: solid black 2px;
+	background-color: fuchsia;
+	width: 200px;
+}
+sueldo{
+	display: table-cell;
+	border: solid black 2px;
+	background-color: salmon;
+	width: 200px;
+}
