@@ -43,6 +43,22 @@ td{
 	text-align: center;
 	background-color: #FFBA7A;
 }
+.parProducto{
+	text-align: center;
+	background-color: violet;
+}
+.imparProducto{
+	text-align: center;
+	background-color: skyblue;
+}
+.parFactura{
+	text-align: center;
+	background-color: orangered;
+}
+.imparFactura{
+	text-align: center;
+	background-color: coral;
+}
 
 .table2{
 	display: table;
