@@ -348,7 +348,7 @@
 					</xsl:if>
 					</xsl:for-each>
 				</table>
-				<h2>Modifica la tabla facturas del segundo ejercicio añadiendo una nueva columna llamada "precio total" calculado de la siguiente manera:
+				<h2>5.- Modifica la tabla facturas del segundo ejercicio añadiendo una nueva columna llamada "precio total" calculado de la siguiente manera:
 					<ul>
 						<li>Precio total = cantidad * pvp</li>
 					</ul>
@@ -356,6 +356,7 @@
 				</h2>
 				<table>
 					<tr>
+						<th rowspan="2">ID Factura</th>
 						<th rowspan="2">Número de línea</th>
 						<th rowspan="2">Fecha y hora</th>
 						<th rowspan="2">Código de cliente</th>
@@ -370,6 +371,7 @@
 					<xsl:for-each select="tienda/facturas/factura">
 					<xsl:sort select="@idfactura" />
 						<tr>
+							<td class="coral"><xsl:value-of select="@idfactura" /></td>
 							<td class="coral"><xsl:value-of select="numlinea" /></td>
 							<td class="amarillo"><xsl:value-of select="fecha" /></td>
 							<td class="amarillo"><xsl:value-of select="codcliente" /></td>
@@ -380,13 +382,14 @@
 						</tr>
 					</xsl:for-each>
 				</table>
-				<h2>6.-De la tabla productos obten los que son de tipo hardware, software y clases cuyo preciosea superior a 50. Ordena los resultados por el tipo y después por el precio. </h2>
+				<h2>6.-De la tabla productos obten los que son de tipo hardware, software y clases cuyo precio sea superior a 50. Ordena los resultados por el tipo y después por el precio. </h2>
 				<table>
 					<tr>
 						<th rowspan="2">Nombre de producto</th>
-						<th  rowspan="2">Precio con IVA</th>
-						<th  rowspan="2">Precio sin IVA</th>
-						<th  rowspan="2">Productos en stock</th>
+						<th rowspan="2">Precio con IVA</th>
+						<th rowspan="2">Precio sin IVA</th>
+						<th rowspan="2">Productos en stock</th>
+						<th rowspan="2">Tipo</th>
 						<th colspan="3">Proveedores</th>
 					</tr>
 					<tr>
@@ -397,13 +400,14 @@
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
 					<xsl:sort select="@tipo" />
-					<xsl:sort select="precio" data-type="number" />
+					<xsl:sort select="preciosiniva" data-type="number" />
 					<xsl:if test="(@tipo='software' or @tipo='hardware') and preciosiniva * 1.21 >50">
 						<tr>
 							<td class="azul"><xsl:value-of select="nombre" /></td>
-							<td class="violeta"><xsl:value-of select="preciosiniva * 1.21" /></td>							
+							<td class="violeta"><xsl:value-of select="preciosiniva * 1.21" /></td>		
 							<td class="violeta"><xsl:value-of select="preciosiniva " /></td>
 							<td class="violeta"><xsl:value-of select="productosenstock" /></td>
+							<td class="violeta"><xsl:value-of select="@tipo" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/nombre" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/direccion" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/telefono" /></td>
@@ -412,9 +416,10 @@
 					<xsl:if test=" @tipo='clases' and preciosiniva*1.10>50" >
 						<tr>
 							<td class="azul"><xsl:value-of select="nombre" /></td>
-							<td class="violeta"><xsl:value-of select="preciosiniva * 1.10" /></td>							
+							<td class="violeta"><xsl:value-of select="preciosiniva * 1.10" /></td>
 							<td class="violeta"><xsl:value-of select="preciosiniva " /></td>
 							<td class="violeta"><xsl:value-of select="productosenstock" /></td>
+							<td class="violeta"><xsl:value-of select="@tipo" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/nombre" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/direccion" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/telefono" /></td>
@@ -440,7 +445,7 @@
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
 					<xsl:sort select="proveedores/nombre"/>
-					<xsl:sort select="productosenstock"/>
+					<xsl:sort select="productosenstock" data-type="number"/>
 					
 					<xsl:if test="(@tipo='software' or @tipo='hardware') and productosenstock >50">
 						<tr>
@@ -457,7 +462,7 @@
 					<xsl:if test="(@tipo='alimentacion' or @tipo='clases' or @tipo='medicina') and productosenstock>50" >
 						<tr>
 							<td class="azul"><xsl:value-of select="nombre" /></td>
-							<td class="violeta"><xsl:value-of select="preciosiniva * 1.10" /></td>							
+							<td class="violeta"><xsl:value-of select="preciosiniva * 1.10" /></td>		
 							<td class="violeta"><xsl:value-of select="preciosiniva " /></td>
 							<td class="violeta"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/nombre" /></td>
@@ -472,9 +477,10 @@
 				<table>
 					<tr>
 						<th rowspan="2">Nombre de producto</th>
-						<th  rowspan="2">Precio con IVA</th>			
-						<th  rowspan="2">Precio sin IVA</th>
-						<th  rowspan="2">Productos en stock</th>
+						<th rowspan="2">Precio con IVA</th>			
+						<th rowspan="2">Precio sin IVA</th>
+						<th rowspan="2">Productos en stock</th>
+						<th rowspan="2">Tipo</th>
 						<th colspan="3">Proveedores</th>
 					</tr>
 					<tr>		
@@ -489,9 +495,10 @@
 					<xsl:if test="@tipo='clases'" >
 						<tr>
 							<td class="azul"><xsl:value-of select="nombre" /></td>
-							<td class="violeta"><xsl:value-of select="preciosiniva * 1.10" /></td>							
+							<td class="violeta"><xsl:value-of select="preciosiniva * 1.10" /></td>
 							<td class="violeta"><xsl:value-of select="preciosiniva " /></td>
 							<td class="violeta"><xsl:value-of select="productosenstock" /></td>
+							<td class="violeta"><xsl:value-of select="@tipo" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/nombre" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/direccion" /></td>
 							<td class="verde"><xsl:value-of select="proveedores/telefono" /></td>
@@ -513,7 +520,7 @@
 					<xsl:sort select="@tipo"/>
 					<xsl:sort select="precioconiva"/>
 					
-					<xsl:if test="(@tipo='software' or @tipo='hardware') and (contains(nombre,'en')or contains(nombre, 'er') or contains(nombre,'an'))and preciosiniva*1.21 >20">
+					<xsl:if test="(@tipo='software' or @tipo='hardware') and (contains(nombre,'en')or contains(nombre, 'er') or contains(nombre,'an'))and preciosiniva>20">
 						<tr>
 							
 							<td class="azul"><xsl:value-of select="nombre" /></td>
@@ -522,10 +529,10 @@
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
 						</tr>
 					</xsl:if>
-					<xsl:if test="(@tipo='alimentacion' or @tipo='clases' or @tipo='medicina') and (contains(nombre, 'en')or contains(nombre,'er') or contains(nombre,'an'))and preciosiniva*1.10 >20" >
+					<xsl:if test="(@tipo='alimentacion' or @tipo='clases' or @tipo='medicina') and (contains(nombre, 'en')or contains(nombre,'er') or contains(nombre,'an'))and preciosiniva>20" >
 						<tr>
 							<td class="azul"><xsl:value-of select="nombre" /></td>
-							<td class="violeta"><xsl:value-of select="preciosiniva * 1.21" /></td>
+							<td class="violeta"><xsl:value-of select="preciosiniva * 1.10" /></td>
 							<td class="violeta"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
 						</tr>
@@ -545,23 +552,24 @@
 					<xsl:sort select="@tipo"/>
 					<xsl:sort select="precioconiva"/>
 					
-					<xsl:if test="@tipo='software' or @tipo='hardware'">
+
+					<xsl:if test="(@tipo='software' or @tipo='hardware') and (contains(nombre,'en')or contains(nombre, 'er') or contains(nombre,'an'))and preciosiniva>20">
 						<tr>
 							
 							<td class="azul"><xsl:value-of select="nombre" /></td>
 							<td class="violeta"><xsl:value-of select="preciosiniva * 1.21" /></td>
 							<td class="violeta"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
-							<td class="violeta"><xsl:value-of select="round(precioconiva - preciosiniva * 1.21)" /></td>
+							<td class="violeta"><xsl:value-of select="round((preciosiniva * 1.21 - precioconiva)*100)div 100" /></td>
 						</tr>
 					</xsl:if>
-					<xsl:if test="@tipo='alimentacion'or @tipo='clases' or @tipo='medicina'" >
+					<xsl:if test="(@tipo='alimentacion' or @tipo='clases' or @tipo='medicina') and (contains(nombre, 'en')or contains(nombre,'er') or contains(nombre,'an'))and preciosiniva>20" >
 						<tr>
 							<td class="azul"><xsl:value-of select="nombre" /></td>
-							<td class="violeta"><xsl:value-of select="preciosiniva * 1.21" /></td>
+							<td class="violeta"><xsl:value-of select="preciosiniva * 1.10" /></td>
 							<td class="violeta"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
-							<td class="violeta"><xsl:value-of select="round(precioconiva - preciosiniva * 1.21)" /></td>
+							<td class="violeta"><xsl:value-of select="round((preciosiniva * 1.10 - precioconiva)*100)div 100" /></td>
 						</tr>
 					</xsl:if>
 					</xsl:for-each>

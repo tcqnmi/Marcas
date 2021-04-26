@@ -1,0 +1,1377 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="Practica3.xsl"?>
+<!DOCTYPE tienda [
+<!ELEMENT tienda (productos, facturas)>
+<!ELEMENT productos (producto+)>
+<!ELEMENT producto (nombre, precioconiva?, preciosiniva, productosenstock, proveedores)>
+<!ATTLIST producto idproducto ID #REQUIRED tipo (software | hardware | alimentacion | clases | medicina) "hardware">
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precioconiva (#PCDATA)>
+<!ELEMENT preciosiniva (#PCDATA)>
+<!ELEMENT productosenstock (#PCDATA)>
+<!ELEMENT proveedores (nombre?, direccion*, telefono*)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+
+<!ELEMENT facturas (factura+)>
+<!ELEMENT factura (numlinea, fecha?, codcliente, articulos)>
+<!ATTLIST factura idfactura ID #REQUIRED>
+<!ELEMENT numlinea (#PCDATA)>
+<!ELEMENT codcliente (#PCDATA)>
+
+<!ELEMENT fecha (dia?, mes?, anio?, hora?)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+
+<!ELEMENT articulos (articulo+)>
+<!ELEMENT articulo (nombre, cantidad, pvp)>
+<!ATTLIST articulo idarticulo ID #REQUIRED>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>
+]>
+
+<tienda>
+	<productos>
+		<producto idproducto="PROD001" tipo="hardware">
+			<nombre>Teclado USB</nombre>
+			<precioconiva>18</precioconiva>
+			<preciosiniva>15</preciosiniva>
+			<productosenstock>43</productosenstock>
+			<proveedores>
+				<nombre>Microsoft</nombre>
+				<direccion>C/ Pepito nº5 Madrid</direccion>
+				<telefono>900800800</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD002" tipo="hardware">
+			<nombre>CD´s Vervatim 50 ud</nombre>
+			<precioconiva>24</precioconiva>
+			<preciosiniva>21</preciosiniva>
+			<productosenstock>56</productosenstock>
+			<proveedores>
+				<nombre>Vervatim</nombre>
+				<direccion>C/ Juanito nº 10 Barcelona</direccion>
+				<telefono>651678472</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD003" tipo="hardware">
+			<nombre>Fuente de alimentación gama mala</nombre>
+			<precioconiva>35</precioconiva>
+			<preciosiniva>31</preciosiniva>
+			<productosenstock>36</productosenstock>
+			<proveedores>
+				<nombre>Corsair</nombre>
+				<direccion>C/ de la fuente nº 89 Zaragoza</direccion>
+				<telefono>651678567</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD004" tipo="hardware">
+			<nombre>Fuente de alimentación gama media</nombre>
+			<precioconiva>50</precioconiva>
+			<preciosiniva>46</preciosiniva>
+			<productosenstock>87</productosenstock>
+			<proveedores>
+				<nombre>Corsair</nombre>
+				<direccion>C/ de la fuente nº 89 Zaragoza</direccion>
+				<telefono>651678567</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD005" tipo="hardware">
+			<nombre>Fuente de alimentación gama buena</nombre>
+			<precioconiva>89</precioconiva>
+			<preciosiniva>83</preciosiniva>
+			<productosenstock>17</productosenstock>
+			<proveedores>
+				<nombre>Corsair</nombre>
+				<direccion>C/ de la fuente nº 89 Zaragoza</direccion>
+				<telefono>651678567</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD006" tipo="alimentacion">
+			<nombre>Pera</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>13</preciosiniva>
+			<productosenstock>25</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD007" tipo="alimentacion">
+			<nombre>Manzana</nombre>
+			<precioconiva>13</precioconiva>
+			<preciosiniva>11</preciosiniva>
+			<productosenstock>2</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD008" tipo="alimentacion">
+			<nombre>Kiwi</nombre>
+			<precioconiva>6</precioconiva>
+			<preciosiniva>4.5</preciosiniva>
+			<productosenstock>13</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD009" tipo="alimentacion">
+			<nombre>Naranja</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>655</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD010" tipo="alimentacion">
+			<nombre>Cebollas</nombre>
+			<precioconiva>5</precioconiva>
+			<preciosiniva>4</preciosiniva>
+			<productosenstock>400</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD011" tipo="alimentacion">
+			<nombre>Pimientos</nombre>
+			<precioconiva>5</precioconiva>
+			<preciosiniva>4</preciosiniva>
+			<productosenstock>400</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD012" tipo="software">
+			<nombre>Avast</nombre>
+			<precioconiva>88</precioconiva>
+			<preciosiniva>65</preciosiniva>
+			<productosenstock>16</productosenstock>
+			<proveedores> 
+				<nombre>Avast</nombre>
+				<direccion>Avast London</direccion>
+				<telefono>088874873</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD013" tipo="hardware">
+			<nombre>Ratón Corsair</nombre>
+			<precioconiva>10</precioconiva>
+			<preciosiniva> 25</preciosiniva>
+			<productosenstock>1</productosenstock>
+			<proveedores> 
+				<nombre>PC Componentes</nombre>
+				<direccion>Murcia</direccion>
+				<telefono>903254125</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD014" tipo="hardware">
+			<nombre>Ratón Corsair inhalámbrico</nombre>
+			<precioconiva>60</precioconiva>
+			<preciosiniva>50</preciosiniva>
+			<productosenstock>10</productosenstock>
+			<proveedores> 
+				<nombre>Amazon</nombre>
+				<direccion>UK</direccion>
+				<telefono>987468473</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD015" tipo="clases">
+			<nombre>Clases Online Física</nombre>
+			<precioconiva>68</precioconiva>
+			<preciosiniva>66</preciosiniva>
+			<productosenstock>4</productosenstock>
+			<proveedores> 
+				<nombre>CMA Online</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987416986</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD016" tipo="alimentacion">
+			<nombre>Lentejas</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>10</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Legumbres Luengo</nombre>
+				<direccion>calle h</direccion>
+				<telefono>639851472</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD017" tipo="alimentacion">
+			<nombre>Garbanzos</nombre>
+			<precioconiva>19</precioconiva>
+			<preciosiniva>18</preciosiniva>
+			<productosenstock>27</productosenstock>
+			<proveedores>
+				<nombre>Legumbres Luengo</nombre>
+				<direccion>calle h</direccion>
+				<telefono>639851472</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD018" tipo="alimentacion">
+			<nombre>Pera conferencia</nombre>
+			<precioconiva>10</precioconiva>
+			<preciosiniva>16</preciosiniva>
+			<productosenstock>40</productosenstock>
+			<proveedores>
+				<nombre>Legumbres Luengo</nombre>
+				<direccion>calle h</direccion>
+				<telefono>639851472</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD019" tipo="alimentacion">
+			<nombre>Pistachos</nombre>
+			<precioconiva>25</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>54</productosenstock>
+			<proveedores>
+				<nombre>Legumbres Luengo</nombre>
+				<direccion>calle h</direccion>
+				<telefono>639851472</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD020" tipo="alimentacion">
+			<nombre>Almendras</nombre>
+			<precioconiva>70</precioconiva>
+			<preciosiniva>65</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Legumbres Luengo</nombre>
+				<direccion>calle h</direccion>
+				<telefono>639851472</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD021" tipo="hardware">
+			<nombre>Teclado Razer</nombre>
+			<precioconiva>18</precioconiva>
+			<preciosiniva>15</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Razer</nombre>
+				<direccion>C/ Razer Berlin</direccion>
+				<telefono>878767638</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD022" tipo="hardware">
+			<nombre>Ratón Razer</nombre>
+			<precioconiva>24</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Razer</nombre>
+				<direccion>C/ Razer Berlin</direccion>
+				<telefono>878767638</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD023" tipo="hardware">
+			<nombre>Alfombrilla Razer</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>18</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Razer</nombre>
+				<direccion>C/ Razer Berlin</direccion>
+				<telefono>878767638</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD024" tipo="alimentacion">
+			<nombre>Limones</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>45</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD025" tipo="alimentacion">
+			<nombre>Manzana Reineta</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>900</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD026" tipo="alimentacion">
+			<nombre>Caqui</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>340</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD027" tipo="alimentacion">
+			<nombre>Lechuga</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>256</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD028" tipo="alimentacion">
+			<nombre>Tomate Cherry</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>678</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD029" tipo="medicina">
+			<nombre>Vacuna Covid-19</nombre>
+			<precioconiva>10000000</precioconiva>
+			<preciosiniva>8900000</preciosiniva>
+			<productosenstock>100</productosenstock>
+			<proveedores> 
+				<nombre>Antibioticos León</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987412563</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD030" tipo="software">
+			<nombre>AVG</nombre>
+			<precioconiva>8</precioconiva>
+			<preciosiniva>10</preciosiniva>
+			<productosenstock>1</productosenstock>
+			<proveedores> 
+				<nombre>AVG</nombre>
+				<direccion>León</direccion>
+				<telefono>987784581</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD031" tipo="hardware">
+			<nombre>Memoria RAM 2 GB</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>13</preciosiniva>
+			<productosenstock>3</productosenstock>
+			<proveedores> 
+				<nombre>PC Componentes</nombre>
+				<direccion>Murcia</direccion>
+				<telefono>903254125</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD032" tipo="hardware">
+			<nombre>Ratón inhalámbrico</nombre>
+			<precioconiva>60</precioconiva>
+			<preciosiniva>50</preciosiniva>
+			<productosenstock>10</productosenstock>
+			<proveedores> 
+				<nombre>Amazon</nombre>
+				<direccion>UK</direccion>
+				<telefono>987468473</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD033" tipo="clases">
+			<nombre>Clases Online Matemáticas</nombre>
+			<precioconiva> 80</precioconiva>
+			<preciosiniva>10</preciosiniva>
+			<productosenstock>13</productosenstock>
+			<proveedores> 
+				<nombre>CMA Online</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987416986</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD034" tipo="alimentacion">
+			<nombre>Entrecot</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>12</preciosiniva>
+			<productosenstock>300</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle h</direccion>
+				<telefono>639851472</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD035" tipo="alimentacion">
+			<nombre>Chuleton</nombre>
+			<precioconiva>20</precioconiva>
+			<preciosiniva>18</preciosiniva>
+			<productosenstock>140</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle h</direccion>
+				<telefono>678945213</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD036" tipo="alimentacion">
+			<nombre>San jacobos</nombre>
+			<precioconiva>18</precioconiva>
+			<preciosiniva>16</preciosiniva>
+			<productosenstock>40</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle h</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD037" tipo="alimentacion">
+			<nombre>Salchichón</nombre>
+			<precioconiva>25</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>54</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle h</direccion>
+				<telefono>987654321</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD038" tipo="alimentacion">
+			<nombre>Cordero</nombre>
+			<precioconiva>70</precioconiva>
+			<preciosiniva>66</preciosiniva>
+			<productosenstock>32</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle h</direccion>
+				<telefono>684521526</telefono>
+			</proveedores>
+		</producto><producto idproducto="PROD039" tipo="hardware">
+			<nombre>Monitor 16'</nombre>
+			<precioconiva>56</precioconiva>
+			<preciosiniva>54</preciosiniva>
+			<productosenstock>30</productosenstock>
+			<proveedores>
+				<nombre>Lenovo</nombre>
+				<direccion>C/ Pepito nº7 Madrid</direccion>
+				<telefono>900800804</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD040" tipo="hardware">
+			<nombre>Monitor 32'</nombre>
+			<precioconiva>67</precioconiva>
+			<preciosiniva>70</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Lenovo</nombre>
+				<direccion>C/ Pepito nº7 Madrid</direccion>
+				<telefono>900800804</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD041" tipo="hardware">
+			<nombre>Monitor 100'</nombre>
+			<precioconiva>98</precioconiva>
+			<preciosiniva>95</preciosiniva>
+			<productosenstock>80</productosenstock>
+			<proveedores>
+				<nombre>Lenovo</nombre>
+				<direccion>C/ Pepito nº7 Madrid</direccion>
+				<telefono>900800804</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD042" tipo="alimentacion">
+			<nombre>Aguacate</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>400</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD043" tipo="alimentacion">
+			<nombre>Apio</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>375</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD044" tipo="alimentacion">
+			<nombre>Pepino</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>275</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD045" tipo="alimentacion">
+			<nombre>Coliflor</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>983</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD046" tipo="alimentacion">
+			<nombre>Brocoli</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>549</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD047" tipo="hardware">
+			<nombre>Vacuna Gripe A</nombre>
+			<precioconiva>25</precioconiva>
+			<preciosiniva>23</preciosiniva>
+			<productosenstock>200</productosenstock>
+			<proveedores> 
+				<nombre>Antibioticos León</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987412563</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD048" tipo="hardware">
+			<nombre>Tarjeta gráfica GeForce GTX 1060</nombre>
+			<precioconiva>300</precioconiva>
+			<preciosiniva> 280</preciosiniva>
+			<productosenstock>15</productosenstock>
+			<proveedores> 
+				<nombre>PC Componentes</nombre>
+				<direccion>Murcia</direccion>
+				<telefono>903254125</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD049" tipo="hardware">
+			<nombre>Tarjeta gráfica GeForce GTX 1050 TI</nombre>
+			<precioconiva>250</precioconiva>
+			<preciosiniva>230</preciosiniva>
+			<productosenstock>13</productosenstock>
+			<proveedores> 
+				<nombre>PC Componentes</nombre>
+				<direccion>Murcia</direccion>
+				<telefono>903254125</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD050" tipo="hardware">
+			<nombre>Tarjeta gráfica GeForce GTX 1050</nombre>
+			<precioconiva>200</precioconiva>
+			<preciosiniva>180</preciosiniva>
+			<productosenstock>10</productosenstock>
+			<proveedores> 
+				<nombre>Amazon</nombre>
+				<direccion>UK</direccion>
+				<telefono>987468473</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD051" tipo="clases">
+			<nombre>Clases Online Programación</nombre>
+			<precioconiva> 80</precioconiva>
+			<preciosiniva>10</preciosiniva>
+			<productosenstock>3</productosenstock>
+			<proveedores> 
+				<nombre>CMA Online</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987416986</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD052" tipo="alimentacion">
+			<nombre>Salchichas</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>10</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD053" tipo="alimentacion">
+			<nombre>Fajitas</nombre>
+			<precioconiva>19</precioconiva>
+			<preciosiniva>18</preciosiniva>
+			<productosenstock>27</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD054" tipo="alimentacion">
+			<nombre>Picadillo</nombre>
+			<precioconiva>10</precioconiva>
+			<preciosiniva>16</preciosiniva>
+			<productosenstock>40</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD055" tipo="alimentacion">
+			<nombre>Solomillo</nombre>
+			<precioconiva>25</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>54</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD056" tipo="alimentacion">
+			<nombre>Alitas de pollo</nombre>
+			<precioconiva>70</precioconiva>
+			<preciosiniva>65</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto><producto idproducto="PROD057" tipo="hardware">
+			<nombre>Memoria RAM 8 GB</nombre>
+			<precioconiva>60</precioconiva>
+			<preciosiniva>56</preciosiniva>
+			<productosenstock>23</productosenstock>
+			<proveedores>
+				<nombre>PC Componentes</nombre>
+				<direccion>Murcia</direccion>
+				<telefono>903254125</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD058" tipo="hardware">
+			<nombre>Tarjeta gráfica GeForce GTX 1070</nombre>
+			<precioconiva>480</precioconiva>
+			<preciosiniva>450</preciosiniva>
+			<productosenstock>31</productosenstock>
+			<proveedores>
+				<nombre>PC Componentes</nombre>
+				<direccion>Murcia</direccion>
+				<telefono>903254125</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD059" tipo="hardware">
+			<nombre>Tarjeta gráfica GeForce GTX 1060 TI</nombre>
+			<precioconiva>400</precioconiva>
+			<preciosiniva>380</preciosiniva>
+			<productosenstock>22</productosenstock>
+			<proveedores>
+				<nombre>PC Componentes</nombre>
+				<direccion>Murcia</direccion>
+				<telefono>903254125</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD060" tipo="alimentacion">
+			<nombre>Romanescu</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>212</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD061" tipo="alimentacion">
+			<nombre>Papallas</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>354</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD062" tipo="alimentacion">
+			<nombre>Chirimoyas</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>542</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD063" tipo="alimentacion">
+			<nombre>Tomates</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>976</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD064" tipo="alimentacion">
+			<nombre>Patatas</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>874</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD065" tipo="clases">
+			<nombre>Clases Online Programación II</nombre>
+			<precioconiva>100</precioconiva>
+			<preciosiniva>79</preciosiniva>
+			<productosenstock>100</productosenstock>
+			<proveedores> 
+				<nombre>CMA Online</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987416986</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD066" tipo="clases">
+			<nombre>Clases Online Servicios</nombre>
+			<precioconiva>67</precioconiva>
+			<preciosiniva>65</preciosiniva>
+			<productosenstock>1</productosenstock>
+			<proveedores> 
+				<nombre>CMA Online</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987416986</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD067" tipo="hardware">
+			<nombre>Teclado Microsoft</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>13.5</preciosiniva>
+			<productosenstock>19</productosenstock>
+			<proveedores> 
+				<nombre>Microsoft</nombre>
+				<direccion>C/ Pepito nº5 Madrid</direccion>
+				<telefono>900800800</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD068" tipo="hardware">
+			<nombre>Altavoces 5.1</nombre>
+			<precioconiva>60</precioconiva>
+			<preciosiniva>56</preciosiniva>
+			<productosenstock>14</productosenstock>
+			<proveedores> 
+				<nombre>Amazon</nombre>
+				<direccion>UK</direccion>
+				<telefono>987468473</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD069" tipo="clases">
+			<nombre>Clases Online Seguridad</nombre>
+			<precioconiva>80</precioconiva>
+			<preciosiniva>77</preciosiniva>
+			<productosenstock>6</productosenstock>
+			<proveedores> 
+				<nombre>CMA Online</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987416986</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD070" tipo="alimentacion">
+			<nombre>Muslos de pollo</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>10</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD071" tipo="alimentacion">
+			<nombre>Pechuga</nombre>
+			<precioconiva>19</precioconiva>
+			<preciosiniva>18</preciosiniva>
+			<productosenstock>27</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD072" tipo="alimentacion">
+			<nombre>Chorizo</nombre>
+			<precioconiva>10</precioconiva>
+			<preciosiniva>16</preciosiniva>
+			<productosenstock>40</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD073" tipo="alimentacion">
+			<nombre>Conejo</nombre>
+			<precioconiva>25</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>54</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD074" tipo="alimentacion">
+			<nombre>Patitas de cerdo</nombre>
+			<precioconiva>70</precioconiva>
+			<preciosiniva>65</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD075" tipo="hardware">
+			<nombre>Memoria RAM 4 GB</nombre>
+			<precioconiva>30</precioconiva>
+			<preciosiniva>28</preciosiniva>
+			<productosenstock>13</productosenstock>
+			<proveedores>
+				<nombre>Microsoft</nombre>
+				<direccion>C/ Pepito nº5 Madrid</direccion>
+				<telefono>900800800</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD076" tipo="hardware">
+			<nombre>DVD's Vervatim 50 ud</nombre>
+			<precioconiva>35</precioconiva>
+			<preciosiniva>31</preciosiniva>
+			<productosenstock>54</productosenstock>
+			<proveedores>
+				<nombre>Vervatim</nombre>
+				<direccion>C/ Juanito nº 10 Barcelona</direccion>
+				<telefono>651678472</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD077" tipo="alimentacion">
+			<nombre>Frutos secos (mezcla)</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>18</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD078" tipo="alimentacion">
+			<nombre>Anacardos</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>504</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD079" tipo="alimentacion">
+			<nombre>Alubias</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>955</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD080" tipo="alimentacion">
+			<nombre>Nueces</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>870</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD081" tipo="alimentacion">
+			<nombre>Puerro</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>763</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+
+		<producto idproducto="PROD082" tipo="alimentacion">
+			<nombre>Calabacín</nombre>
+			<precioconiva>23</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>904</productosenstock>
+			<proveedores>
+				<nombre>Justo Jaramillo</nombre>
+				<direccion>C/ Falsa 123</direccion>
+				<telefono>987000000</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD083" tipo="hardware">
+			<nombre>Vacuna Sarampión</nombre>
+			<precioconiva>100</precioconiva>
+			<preciosiniva>98</preciosiniva>
+			<productosenstock>1000</productosenstock>
+			<proveedores> 
+				<nombre>Antibioticos León</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987412563</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD084" tipo="software">
+			<nombre>Avast Alejandro</nombre>
+			<precioconiva>0</precioconiva>
+			<preciosiniva>0</preciosiniva>
+			<productosenstock>10000</productosenstock>
+			<proveedores> 
+				<nombre>Avast</nombre>
+				<direccion>Avast London</direccion>
+				<telefono>088874873</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD085" tipo="hardware">
+			<nombre>Ratón Microsoft</nombre>
+			<precioconiva>12</precioconiva>
+			<preciosiniva>11</preciosiniva>
+			<productosenstock>98</productosenstock>
+			<proveedores> 
+				<nombre>Microsoft</nombre>
+				<direccion>C/ Pepito nº5 Madrid</direccion>
+				<telefono>900800800</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD086" tipo="hardware">
+			<nombre>Memoria RAM 16 GB</nombre>
+			<precioconiva>110</precioconiva>
+			<preciosiniva>105</preciosiniva>
+			<productosenstock>16</productosenstock>
+			<proveedores> 
+				<nombre>PC Componentes</nombre>
+				<direccion>Murcia</direccion>
+				<telefono>903254125</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD087" tipo="clases">
+			<nombre>Clases Online Hardware</nombre>
+			<precioconiva>80</precioconiva>
+			<preciosiniva>77</preciosiniva>
+			<productosenstock>6</productosenstock>
+			<proveedores> 
+				<nombre>CMA Online</nombre>
+				<direccion>Armunia</direccion>
+				<telefono>987416986</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD088" tipo="alimentacion">
+			<nombre>Lengua curada</nombre>
+			<precioconiva>15</precioconiva>
+			<preciosiniva>10</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD089" tipo="alimentacion">
+			<nombre>Hamburguesas</nombre>
+			<precioconiva>19</precioconiva>
+			<preciosiniva>18</preciosiniva>
+			<productosenstock>27</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD090" tipo="alimentacion">
+			<nombre>Nuggets</nombre>
+			<precioconiva>10</precioconiva>
+			<preciosiniva>16</preciosiniva>
+			<productosenstock>40</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD091" tipo="alimentacion">
+			<nombre>Cachopo de cecina</nombre>
+			<precioconiva>25</precioconiva>
+			<preciosiniva>20</preciosiniva>
+			<productosenstock>54</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+		<producto idproducto="PROD092" tipo="alimentacion">
+			<nombre>Cachopo de jamón</nombre>
+			<precioconiva>70</precioconiva>
+			<preciosiniva>65</preciosiniva>
+			<productosenstock>20</productosenstock>
+			<proveedores>
+				<nombre>Carniceria MAES</nombre>
+				<direccion>calle f</direccion>
+				<telefono>645123789</telefono>
+			</proveedores>
+		</producto>
+	</productos>
+
+
+
+
+
+
+	<facturas>
+		<factura idfactura="FACT001">
+			<numlinea>13</numlinea>
+			<fecha>
+				<dia>21</dia>
+				<mes>marzo</mes>
+				<anio>2020</anio>
+				<hora>16:54</hora>
+			</fecha>
+			<codcliente>CLI014</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0190">
+					<nombre>Lechuga</nombre>
+					<cantidad>2</cantidad>
+					<pvp>1</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		
+		<factura idfactura="FACT002">
+			<numlinea>15</numlinea>
+			<fecha>
+				<dia>23</dia>
+				<mes>febrero</mes>
+				<anio>2020</anio>
+				<hora>13:25</hora>
+			</fecha>
+			<codcliente>CLI019</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0180">
+					<nombre>Manzanas</nombre>
+					<cantidad>2</cantidad>
+					<pvp>2</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		
+		<factura idfactura="FACT003">
+			<numlinea>11</numlinea>
+			<fecha>
+				<dia>11</dia>
+				<mes>marzo</mes>
+				<anio>2020</anio>
+				<hora>11:34</hora>
+			</fecha>
+			<codcliente>CLI019</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0170">
+					<nombre>Chuletas</nombre>
+					<cantidad>1</cantidad>
+					<pvp>20</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+
+		<factura  idfactura="FACT004">
+			<numlinea>22</numlinea>
+			<fecha>
+				<dia>16</dia>
+				<mes>febrero</mes>
+				<anio>2020</anio>
+				<hora>15:45</hora>
+			</fecha>
+			<codcliente>CLI014</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0171">
+					<nombre>Garbanzos</nombre>
+					<cantidad>2</cantidad>
+					<pvp>3</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+
+		<factura idfactura="FACT005">
+			<numlinea>2</numlinea>
+			<fecha>
+				<dia>12</dia>
+				<mes>marzo</mes>
+				<anio>2020</anio>
+				<hora>12:30</hora>
+			</fecha>
+			<codcliente>CLI016</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0172">
+					<nombre>pc</nombre>
+					<cantidad>1</cantidad>
+					<pvp>1000</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura  idfactura="FACT006">
+			<numlinea>24</numlinea>
+			<fecha>
+				<dia>1</dia>
+				<mes>febrero</mes>
+				<anio>2020</anio>
+				<hora>16:34</hora>
+			</fecha>
+			<codcliente>CLI001</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0173">
+					<nombre>Almendras</nombre>
+					<cantidad>1.5</cantidad>
+					<pvp>70</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+
+		<factura  idfactura="FACT007">
+			<numlinea>26</numlinea>
+			<fecha>
+				<dia>12</dia>
+				<mes>enero</mes>
+				<anio>2020</anio>
+				<hora>11:21</hora>
+			</fecha>
+			<codcliente>CLI001</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0174">
+					<nombre>Alitas de pollo</nombre>
+					<cantidad>2</cantidad>
+					<pvp>70</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+
+		<factura  idfactura="FACT008">
+			<numlinea>36</numlinea>
+			<fecha>
+				<dia>14</dia>
+				<mes>febrero</mes>
+				<anio>2020</anio>
+				<hora>18:59</hora>
+			</fecha>
+			<codcliente>CLI005</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0123">
+					<nombre>Ratón Razer</nombre>
+					<cantidad>3</cantidad>
+					<pvp>24</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+
+		<factura  idfactura="FACT009">
+			<numlinea>1115</numlinea>
+			<fecha>
+				<dia>1</dia>
+				<mes>abril</mes>
+				<anio>2020</anio>
+				<hora>13:43</hora>
+			</fecha>
+			<codcliente>CLI017</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0124">
+					<nombre>Pistachos</nombre>
+					<cantidad>2</cantidad>
+					<pvp>25</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura idfactura="FACT010">
+			<numlinea>7</numlinea>
+			<fecha>
+				<dia>12</dia>
+				<mes>marzo</mes>
+				<anio>2020</anio>
+				<hora>12:30</hora>
+			</fecha>
+			<codcliente>CLI003</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0125">
+					<nombre>Ratón Corsair inhalámbrico</nombre>
+					<cantidad>5</cantidad>
+					<pvp>60</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura idfactura="FACT011">
+			<numlinea>4</numlinea>
+			<fecha>
+				<dia>31</dia>
+				<mes>marzo</mes>
+				<anio>2020</anio>
+				<hora>12:30</hora>
+			</fecha>
+			<codcliente>CLI004</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0126">
+					<nombre>Ratón Corsair</nombre>
+					<cantidad>10</cantidad>
+					<pvp>10</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura idfactura="FACT012">
+			<numlinea>17</numlinea>
+			<fecha>
+				<dia>29</dia>
+				<mes>enero</mes>
+				<anio>2020</anio>
+				<hora>12:30</hora>
+			</fecha>
+			<codcliente>CLI005</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0127">
+					<nombre>Tarjeta gráfica GeForce GTX 1070</nombre>
+					<cantidad>1</cantidad>
+					<pvp>480</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura idfactura="FACT013">
+			<numlinea>4</numlinea>
+			<fecha>
+				<dia>20</dia>
+				<mes>enero</mes>
+				<anio>2020</anio>
+				<hora>12:00</hora>
+			</fecha>
+			<codcliente>CLI002</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0128">
+					<nombre>Patatas</nombre>
+					<cantidad>3</cantidad>
+					<pvp>23</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura idfactura="FACT014">
+			<numlinea>15</numlinea>
+			<fecha>
+				<dia>2</dia>
+				<mes>agosto</mes>
+				<anio>2019</anio>
+				<hora>11:00</hora>
+			</fecha>
+			<codcliente>CLI003</codcliente>
+			<articulos>
+				<articulo idarticulo="PROD0129">
+					<nombre>Tomates</nombre>
+					<cantidad>1</cantidad>
+					<pvp>23</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura idfactura="FACT015">
+			<numlinea>100</numlinea>
+			<fecha>
+				<dia>8</dia>
+				<mes>octubre</mes>
+				<anio>2019</anio>
+				<hora>15:30</hora>
+			</fecha>
+			<codcliente>CLI015</codcliente>
+			<articulos>
+				<articulo idarticulo="ART0151">
+					<nombre>Hamburguesas</nombre>
+					<cantidad>4</cantidad>
+					<pvp>19</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura idfactura="FACT016">
+			<numlinea>50</numlinea>
+			<fecha>
+				<dia>5</dia>
+				<mes>febrero</mes>
+				<anio>2020</anio>
+				<hora>19:56</hora>
+			</fecha>
+			<codcliente>CLI003</codcliente>
+			<articulos>
+				<articulo idarticulo="ART0152">
+					<nombre>Cachopo de jamón</nombre>
+					<cantidad>3</cantidad>
+					<pvp>70</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+		<factura idfactura="FACT017">
+			<numlinea>35</numlinea>
+			<fecha>
+				<dia>1</dia>
+				<mes>abril</mes>
+				<anio>2020</anio>
+				<hora>10:30</hora>
+			</fecha>
+			<codcliente>CLI005</codcliente>
+			<articulos>
+				<articulo idarticulo="ART0153">
+					<nombre>Cachopo de jamón</nombre>
+					<cantidad>2</cantidad>
+					<pvp>70</pvp>
+				</articulo>
+			</articulos>
+		</factura>
+
+
+
+	</facturas>
+</tienda>
+
+
