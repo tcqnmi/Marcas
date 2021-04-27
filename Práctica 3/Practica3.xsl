@@ -327,6 +327,17 @@
 					</xsl:if>
 					</xsl:for-each>
 				</table>
+				<h2>20.- Obtener los producto que tiene el mayor y el menor número de productos en stock</h2>
+				<table>
+					<tr>
+						<th>Nombre del producto</th>
+						<th>Productos en stock</th>
+					</tr>
+					<xsl:for-each select="tienda/productos/producto">
+					<xsl:if test="">
+					</xsl:if>
+					</xsl:for-each>
+				</table>
 
 			</body>
 		</html>
