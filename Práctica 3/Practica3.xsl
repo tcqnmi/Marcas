@@ -328,16 +328,36 @@
 					</xsl:for-each>
 				</table>
 				<h2>20.- Obtener los producto que tiene el mayor y el menor número de productos en stock</h2>
+				<caption>Producto con menor número de stock</caption>
 				<table>
 					<tr>
 						<th>Nombre del producto</th>
 						<th>Productos en stock</th>
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
+					<xsl:sort select="productosenstock" data-type="number" order="ascending" />
 					<xsl:if test="position()=1">
+
 						<tr>
-							<td><xsl:value-of select="nombre"/></td>
-							<td><xsl:value-of select="max(//productosenstock)"/></td>
+							<td class="azul"><xsl:value-of select="nombre"/></td>
+							<td class="violeta"><xsl:value-of select="productosenstock"/></td>
+						</tr>
+					</xsl:if>
+					</xsl:for-each>
+				</table>
+				<caption>Producto con mayor número de stock</caption>
+				<table>
+					<tr>
+						<th>Nombre del producto</th>
+						<th>Productos en stock</th>
+					</tr>
+					<xsl:for-each select="tienda/productos/producto">
+					<xsl:sort select="productosenstock" data-type="number" order="descending" />
+					<xsl:if test="position()=1">
+
+						<tr>
+							<td class="azul"><xsl:value-of select="nombre"/></td>
+							<td class="violeta"><xsl:value-of select="productosenstock"/></td>
 						</tr>
 					</xsl:if>
 					</xsl:for-each>
