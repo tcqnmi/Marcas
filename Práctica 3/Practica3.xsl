@@ -68,7 +68,7 @@
 						
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
-					<xsl:sort select="@tipo"/>
+					<xsl:sort select="proveedores/nombre"/>
 					<xsl:sort select="preciosiniva * 1.21 - precioconiva" data-type="number"/>
 					
 
@@ -124,7 +124,7 @@
 					</xsl:for-each>
 
 				</table>
-				<h2>13.- Obtener las ganancias previstas por el proveedor para cada producto de tipo clases, alimentación o medicina en función del número de productos en stock y el precio sin IVA, teniendo en cuenta que los proveedores de medicina y de clases se lleva el 70% de las ganancias y los de alimentación el 20%. 
+				<h2>14.- Obtener las ganancias previstas por el proveedor para cada producto de tipo clases, alimentación o medicina en función del número de productos en stock y el precio sin IVA, teniendo en cuenta que los proveedores de medicina y de clases se lleva el 70% de las ganancias y los de alimentación el 20%. 
 				<br />Ordena los datos por el tipo de producto y después por las ganancias previstas. Detrás de todos los precios se debe incluir la unidad de medida en €.</h2>
 				<table>
 					<tr>
@@ -137,7 +137,7 @@
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
 					<xsl:sort select="@tipo"/>
-					<xsl:sort select="(preciosiniva*productosenstock)*0.6" data-type="number"/>
+					<xsl:sort select="(preciosiniva*productosenstock)*0.7" data-type="number"/>
 					<xsl:if test="@tipo='medicina' or @tipo='clases'">
 						<tr>
 							<td class="azul"><xsl:value-of select="proveedores/nombre" /></td>
