@@ -334,7 +334,11 @@
 						<th>Productos en stock</th>
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
-					<xsl:if test="">
+					<xsl:if test="position()=1">
+						<tr>
+							<td><xsl:value-of select="nombre"/></td>
+							<td><xsl:value-of select="max(//productosenstock)"/></td>
+						</tr>
 					</xsl:if>
 					</xsl:for-each>
 				</table>
