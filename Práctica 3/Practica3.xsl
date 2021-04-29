@@ -22,7 +22,7 @@
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
 					<xsl:sort select="@tipo"/>
-					<xsl:sort select="preciosiniva * 1.21 - precioconiva" data-type="number"/>
+					<xsl:sort select="precioconiva - preciosiniva * 1.21" data-type="number"/>
 					
 
 					<xsl:if test="@tipo='software' or @tipo='hardware'">
@@ -34,7 +34,7 @@
 							<td class="violeta"><xsl:value-of select="preciosiniva " />€</td>
 							<td class="verde"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
-							<td class="violeta"><xsl:value-of select="round((preciosiniva * 1.21 - precioconiva)*100)div 100" />€</td>
+							<td class="violeta"><xsl:value-of select="round((precioconiva - preciosiniva * 1.21  )*100)div 100" />€</td>
 						</tr>
 					</xsl:if>
 					<xsl:if test="@tipo='alimentacion' or @tipo='clases' or @tipo='medicina'" >
@@ -45,7 +45,7 @@
 							<td class="violeta"><xsl:value-of select="preciosiniva " />€</td>
 							<td class="verde"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
-							<td class="violeta"><xsl:value-of select="round((preciosiniva * 1.10 - precioconiva)*100)div 100" />€</td>
+							<td class="violeta"><xsl:value-of select="round((precioconiva - preciosiniva * 1.10)*100)div 100" />€</td>
 						</tr>
 					</xsl:if>
 					</xsl:for-each>
@@ -69,10 +69,10 @@
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
 					<xsl:sort select="proveedores/nombre"/>
-					<xsl:sort select="preciosiniva * 1.21 - precioconiva" data-type="number"/>
+					<xsl:sort select="precioconiva - preciosiniva * 1.21 " data-type="number"/>
 					
 
-					<xsl:if test="(@tipo='software' or @tipo='hardware') and preciosiniva * 1.20 - precioconiva>10">
+					<xsl:if test="(@tipo='software' or @tipo='hardware') and precioconiva - preciosiniva * 1.21 >10">
 						<tr>
 							
 							<td class="azul"><xsl:value-of select="nombre" /></td>
@@ -82,10 +82,10 @@
 							<td class="verde"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
 							<td class="azul"><xsl:value-of select="proveedores/nombre"/></td>
-							<td class="violeta"><xsl:value-of select="round((preciosiniva * 1.21 - precioconiva)*100)div 100" />€</td>
+							<td class="violeta"><xsl:value-of select="round((precioconiva - preciosiniva * 1.21  )*100)div 100" />€</td>
 						</tr>
 					</xsl:if>
-					<xsl:if test="(@tipo='alimentacion' or @tipo='clases' or @tipo='medicina')  and preciosiniva * 1.10 - precioconiva>10" >
+					<xsl:if test="(@tipo='alimentacion' or @tipo='clases' or @tipo='medicina')  and precioconiva - preciosiniva * 1.10 >10" >
 						<tr>
 							<td class="azul"><xsl:value-of select="nombre" /></td>
 							<td class="violeta"><xsl:value-of select="precioconiva" />€</td>
@@ -93,7 +93,8 @@
 							<td class="violeta"><xsl:value-of select="preciosiniva " />€</td>
 							<td class="verde"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
-							<td class="violeta"><xsl:value-of select="round((preciosiniva * 1.10 - precioconiva)*100)div 100" />€</td>
+							<td class="azul"><xsl:value-of select="proveedores/nombre"/></td>
+							<td class="violeta"><xsl:value-of select="round((precioconiva - preciosiniva * 1.10)*100)div 100" />€</td>
 						</tr>
 					</xsl:if>
 					</xsl:for-each>
