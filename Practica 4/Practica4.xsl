@@ -221,7 +221,7 @@
 							<td class="verde"><xsl:value-of select="productosenstock" /></td>
 							<td class="verde"><xsl:value-of select="@tipo"/></td>
 							<td class="verde"><xsl:value-of select="proveedores/nombre"/></td>
-							<td class="violeta"><xsl:value-of select="round((precioconiva - $coniva)*100)div100" />€</td>
+							<td class="violeta"><xsl:value-of select="round(($estafan)*100)div100" />€</td>
 						</tr>
 					</xsl:if>
 					</xsl:for-each>
@@ -265,31 +265,34 @@
 							<td class="verde"><xsl:value-of select="@tipo" /></td>
 							<td class="verde"><xsl:value-of select="productosenstock" /></td>
 							<td class="violeta"><xsl:value-of select="preciosiniva" />€</td>
-							<td class="violeta"><xsl:value-of select="(preciosiniva*productosenstock)*0.7" />€</td>
+							<td class="violeta"><xsl:value-of select="$ganancia" />€</td>
 						</tr>
 					</xsl:for-each>
 				</table>
 				<h2>8.- Obtener el número de productos de cada proveedor y el número total de productos (productos, no productos en stock).</h2>
 				<table>
+
 					<tr>
 						<th>Nombre del proveedor</th>
 						<th>Total de productos</th>
 					</tr>
 					<xsl:for-each select="tienda/productos/producto" >
-						<xsl:variable nombre="proudctos">
+						<xsl:variable nombre="productosProveedor">
 							<xsl:choose>
-								<xsl:when test="producto">
-									<xsl:value-of select="count(/tienda/productos/producto/proveedores/nombre[../nombre='Justo Jaramillo'])" />
+								<xsl:when test="proveedores/nombre='Justo Jaramillo'">
+									<xsl:value-of select="count(@idproducto)" />
 								</xsl:when>
 							</xsl:choose>
 						</xsl:variable>
 					<xsl:if test="position()=1">
 					<tr class="verde">
 						<td><xsl:value-of select="/tienda/productos/producto/proveedores/nombre[../nombre='Justo Jaramillo']" /></td>
-						<td><xsl:value-of select="" /></td>
+						<td><xsl:value-of select="$productosProveedor" /></td>
 					</tr>
 					</xsl:if>
-					<xsl:if test="position()=1">
+				</xsl:for-each>
+			</table>
+					<!--<xsl:if test="position()=1">
 					<tr class="azul">
 						<td><xsl:value-of select="/tienda/productos/producto/proveedores/nombre[../nombre='Corsair']" /></td>
 						<td><xsl:value-of select="count(/tienda/productos/producto/proveedores/nombre[../nombre='Corsair'])" /></td>
@@ -384,6 +387,40 @@
 
 					
 				</table>
+				<h2>10.- Calcular la media de precio con iva calculado de los productos de la tienda y muestra los productos cuyo precio con iva calculado sea mayor que la media.</h2>
+				<table>
+					<tr>
+						<th>Nombre del producto</th>
+						<th>Precio con IVA mayor de la media</th>
+					</tr>
+					<xsl:for-each select="tienda/productos/producto">
+					<xsl:variable name="coniva">
+						<xsl:choose>
+							<xsl:when test="@tipo='software' or @tipo='hardware'">
+								<xsl:value-of select="preciosiniva*1.21" />
+							</xsl:when>
+							<xsl:otherwise >
+								<xsl:value-of select="preciosiniva*1.10" />
+							</xsl:otherwise>s
+
+						</xsl:choose>
+					</xsl:variable>
+					<xsl:variable name="numeroProductos" select="sum(productosenstock)"/>
+					<xsl:variable name="mediaIva" select="sum($coniva)/$numeroProductos"/>
+					<xsl:if test="$coniva > $mediaIva">
+						<tr>
+							<td class="azul"><xsl:value-of select="nombre" /></td>
+							<td class="violeta"><xsl:value-of select="$coniva"/>€</td>
+							
+						</tr>
+					</xsl:if>
+					<tr>
+							<th>Media IVA </th>
+							<td><xsl:value-of select="$mediaIva"/></td>
+					</tr>
+				</xsl:for-each>
+				</table>-->
+
 
 			</body>
 		</html>
