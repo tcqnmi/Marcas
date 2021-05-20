@@ -1,0 +1,31 @@
+Vocabulario:
+
+Tienda, Planta, Producto, Código, Nombre, Precio
+
+Reglas:
+
+Cada tienda tiene varias plantas, en cada planta habrá diferentes tipos de productos y cada uno tiene un solo código, nombre y precio, cada uno es un texto simple. Después de cada producto solo puede haber otro producto o fin de planta , detrás de cada planta puede ir otra planta o fin de tienda.
+
+Instancia del documento:
+
+<Tienda>
+	<planta>
+		<producto>
+			<código>01234</código>
+			<nombre>silla</nombre>
+			<precio>150</precio>
+		</producto>
+		<producto>
+			<código>0567</código>
+			<nombre>mesa</nombre>
+			<precio>300</precio>
+		</producto>
+	</planta>
+	<planta>
+		<producto>
+			<código>9856</código>
+			<nombre>ordenador</nombre>
+			<precio>500</precio>
+		</producto>
+	</planta>
+</tienda>

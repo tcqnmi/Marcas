@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="Practica5.xsl"?>
+
+<!DOCTYPE competicion [
+	<!ELEMENT competicion (jornada)+>
+	<!ELEMENT jornada (fecha?, partidos, clasificacion?, estadisticas?)>
+	<!ATTLIST jornada idjornada ID #REQUIRED>
+	<!ELEMENT fecha (dia, mes, anio)>
+	<!ELEMENT dia (#PCDATA)>
+	<!ELEMENT mes (#PCDATA)>
+	<!ELEMENT anio (#PCDATA)>
+	<!ELEMENT partidos (partido)+>
+	<!ELEMENT partido (local, visitante, resultado)>
+	<!ATTLIST partido idpartido ID #REQUIRED>
+	<!ELEMENT local (#PCDATA)>
+	<!ELEMENT visitante (#PCDATA)>
+	<!ELEMENT resultado (#PCDATA)>
+	<!ATTLIST local idlocal ID #REQUIRED localidad CDATA #IMPLIED>
+	<!ATTLIST visitante idvisitante ID #REQUIRED localidad CDATA #IMPLIED>
+
+	<!ELEMENT clasificacion (equipo_clasificacion+)>
+	<!ELEMENT equipo_clasificacion (nombre, disputados, ganados, perdidos, empatados, favor, contra)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT disputados (#PCDATA)>
+	<!ELEMENT ganados (#PCDATA)>
+	<!ELEMENT perdidos (#PCDATA)>
+	<!ELEMENT empatados (#PCDATA)>
+	<!ELEMENT favor (#PCDATA)>
+	<!ELEMENT contra (#PCDATA)>
+	<!ELEMENT estadisticas (goles+, remates+, pases+, asistencias+, recuperaciones+)>
+	<!ELEMENT goles (nombre, numero, equipo)>
+	<!ELEMENT remates (nombre, numero, equipo)>
+	<!ELEMENT pases (nombre, numero, equipo)>
+	<!ELEMENT asistencias (nombre, numero, equipo)>
+	<!ELEMENT recuperaciones (nombre, numero, equipo)>
+	<!ELEMENT numero (#PCDATA)>
+	<!ELEMENT equipo (#PCDATA)>
+
+
+]>
+
+<competicion>
+<jornada idjornada="JOR024">
+		<fecha>
+			<dia>16</dia>
+			<mes>Febrero</mes>
+			<anio>2020</anio>
+		</fecha>
+		<partidos>
+			<partido idpartido="PAR2401">
+				<local idlocal="LOC2401" localidad="Granada">Granada FC</local>
+				<visitante idvisitante="VIS2401">Real Valladolid</visitante>
+				<resultado>2-1</resultado>
+			</partido>
+			<partido idpartido="PAR2402">
+				<local idlocal="LOC2402" localidad="Sevilla">Sevilla FC</local>
+				<visitante idvisitante="VIS2402">RCD Espanyol</visitante>
+				<resultado>2-2</resultado>
+			</partido>
+
+			<partido idpartido="PAR2403">
+				<local idlocal="LOC2403" localidad="Leganés">CD Leganés</local>
+				<visitante idvisitante="VIS2403">Real Betis</visitante>
+				<resultado>0-0</resultado>
+			</partido>
+			<partido idpartido="PAR2404">
+				<local idlocal="LOC2404" localidad="Bilbao">Athletic Club</local>
+				<visitante idvisitante="VIS2404">C.A. Osasuna</visitante>
+				<resultado>0-1</resultado>
+			</partido>
+			<partido idpartido="PAR2405">
+				<local idlocal="LOC2405" localidad="Madrid">Real Madrid</local>
+				<visitante idvisitante="VIS2405">RC Celta</visitante>
+				<resultado>2-2</resultado>
+			</partido>
+
+			<partido idpartido="PAR2406">
+				<local idlocal="LOC2406" localidad="Eibar">SD Eibar</local>
+				<visitante idvisitante="VIS2406">Real Sociedad</visitante>
+				<resultado>1-2</resultado>
+			</partido>
+			<partido idpartido="PAR2407">
+				<local idlocal="LOC2407" localidad="Valencia">Valencia CF</local>
+				<visitante idvisitante="VIS2407">Atletico de Madrid</visitante>
+				<resultado>2-2</resultado>
+			</partido>
+			<partido idpartido="PAR2408">
+				<local idlocal="LOC2408" localidad="Mallorca">RCD Mallorca</local>
+				<visitante idvisitante="VIS2408">D. Alavés</visitante>
+				<resultado>1-0</resultado>
+			</partido>
+			<partido idpartido="PAR2409">
+				<local idlocal="LOC2409" localidad="Barcelona">FC Barcelona</local>
+				<visitante idvisitante="VIS2409">Getafe CF</visitante>
+				<resultado>2-1</resultado>
+			</partido>
+			<partido idpartido="PAR2410">
+				<local idlocal="LOC2410" localidad="Valencia">Villarreal FC</local>
+				<visitante idvisitante="VIS2410">Levante UD</visitante>
+				<resultado>2-1</resultado>
+			</partido>
+		</partidos>
+	</jornada>
+
+<jornada idjornada="JOR025">
+		<fecha>
+			<dia>23</dia>
+			<mes>Febrero</mes>
+			<anio>2020</anio>
+		</fecha>
+		<partidos>
+			<partido idpartido="PAR2501">
+				<local idlocal="LOC2501" localidad="Pamplona">C.A. Osasuna</local>
+				<visitante idvisitante="VIS2501">Granada CF</visitante>
+				<resultado>0-3</resultado>
+			</partido>
+			<partido idpartido="PAR2502">
+				<local idlocal="LOC2502" localidad="Álava">D. Alavés</local>
+				<visitante idvisitante="VIS2502">Athletic Club</visitante>
+				<resultado>2-1</resultado>
+			</partido>
+
+			<partido idpartido="PAR2503">
+				<local idlocal="LOC2503" localidad="Valladolid">Real Valladolid</local>
+				<visitante idvisitante="VIS2503">RCD Espanyol</visitante>
+				<resultado>2-1</resultado>
+			</partido>
+			<partido idpartido="PAR2504">
+				<local idlocal="LOC2504" localidad="Getafe">Getafe CF</local>
+				<visitante idvisitante="VIS2504">Sevilla FC</visitante>
+				<resultado>0-3</resultado>
+			</partido>
+			<partido idpartido="PAR2505">
+				<local idlocal="LOC2505" localidad="Madrid">Atletico de Madrid</local>
+				<visitante idvisitante="VIS2505">Villarreal FC</visitante>
+				<resultado>3-1</resultado>
+			</partido>
+
+			<partido idpartido="PAR2506">
+				<local idlocal="LOC2506" localidad="Sevilla">Real Betis</local>
+				<visitante idvisitante="VIS2506">RCD Mallorca</visitante>
+				<resultado>3-3</resultado>
+			</partido>
+			<partido idpartido="PAR2507">
+				<local idlocal="LOC2507" localidad="Vigo">RC Celta</local>
+				<visitante idvisitante="VIS2507">CD Leganés</visitante>
+				<resultado>1-0</resultado>
+			</partido>
+			<partido idpartido="PAR2508">
+				<local idlocal="LOC2508" localidad="Barcelona">FC Barcelona</local>
+				<visitante idvisitante="VIS2508">SD Eibar</visitante>
+				<resultado>5-0</resultado>
+			</partido>
+			<partido idpartido="PAR2509">
+				<local idlocal="LOC2509" localidad="San Sebastian">Real Sociedad</local>
+				<visitante idvisitante="VIS2509">Valencia CF</visitante>
+				<resultado>3-0</resultado>
+			</partido>
+			<partido idpartido="PAR2510">
+				<local idlocal="LOC2510" localidad="Valencia">Levante UD</local>
+				<visitante idvisitante="VIS2510">Real Madrid</visitante>
+				<resultado>1-0</resultado>
+			</partido>
+		</partidos>
+	</jornada>
+
+<jornada idjornada="JOR026">
+		<fecha>
+			<dia>1</dia>
+			<mes>marzo</mes>
+			<anio>2020</anio>
+		</fecha>
+		<partidos>
+			<partido idpartido="PAR2601">
+				<local idlocal="LOC2601" localidad="San Sebastian">Real Sociedad</local>
+				<visitante idvisitante="VIS2601">Real Valladolid</visitante>
+				<resultado>1-0</resultado>
+			</partido>
+			<partido idpartido="PAR2602">
+				<local idlocal="LOC2602" localidad="Eibar">SD Eibar</local>
+				<visitante idvisitante="VIS2602">Levante UD</visitante>
+				<resultado>3-0</resultado>
+			</partido>
+
+			<partido idpartido="PAR2603">
+				<local idlocal="LOC2603" localidad="Valencia">Valencia CF</local>
+				<visitante idvisitante="VIS2603">Real Betis</visitante>
+				<resultado>2-1</resultado>
+			</partido>
+			<partido idpartido="PAR2604">
+				<local idlocal="LOC2604" localidad="Barcelona">RCD Espanyol</local>
+				<visitante idvisitante="VIS2604">Atletico de Madrid</visitante>
+				<resultado>1-1</resultado>
+			</partido>
+			<partido idpartido="PAR2605">
+				<local idlocal="LOC2605" localidad="Leganés">CD Leganés</local>
+				<visitante idvisitante="VIS2605">D. Alavés</visitante>
+				<resultado>1-1</resultado>
+			</partido>
+
+			<partido idpartido="PAR2606">
+				<local idlocal="LOC2606" localidad="Granada">Granada F.C.</local>
+				<visitante idvisitante="VIS2606">RC Celta</visitante>
+				<resultado>0-0</resultado>
+			</partido>
+			<partido idpartido="PAR2607">
+				<local idlocal="LOC2607" localidad="Sevilla">Sevilla FC</local>
+				<visitante idvisitante="VIS2607">C.A. Osasuna</visitante>
+				<resultado>3-2</resultado>
+			</partido>
+			<partido idpartido="PAR2608">
+				<local idlocal="LOC2608" localidad="Bilbao">Athletic Club</local>
+				<visitante idvisitante="VIS2608">Villarreal FC</visitante>
+				<resultado>1-0</resultado>
+			</partido>
+			<partido idpartido="PAR2609">
+				<local idlocal="LOC2609" localidad="Mallorca">RCD Mallorca</local>
+				<visitante idvisitante="VIS2609">Getafe FC</visitante>
+				<resultado>0-1</resultado>
+			</partido>
+			<partido idpartido="PAR2610">
+				<local idlocal="LOC2610" localidad="Madrid">Real Madrid</local>
+				<visitante idvisitante="VIS2610">FC Barcelona</visitante>
+				<resultado>2-0</resultado>
+			</partido>
+		</partidos>
+	</jornada>
+
+	<jornada idjornada="JOR027">
+		<fecha>
+			<dia>8</dia>
+			<mes>marzo</mes>
+			<anio>2020</anio>
+		</fecha>
+		<partidos>
+			<partido idpartido="PAR2701">
+				<local idlocal="LOC2701" localidad="Álava">D. Alavés</local>
+				<visitante idvisitante="VIS2701">Valencia CF</visitante>
+				<resultado>1-1</resultado>
+			</partido>
+			<partido idpartido="PAR2702">
+				<local idlocal="LOC2702" localidad="Eibar">SD Eibar</local>
+				<visitante idvisitante="VIS2702">RCD Mallorca</visitante>
+				<resultado>1-2</resultado>
+			</partido>
+
+			<partido idpartido="PAR2703">
+				<local idlocal="LOC2703" localidad="Madrid">Atletico de Madrid</local>
+				<visitante idvisitante="VIS2703">Sevilla FC</visitante>
+				<resultado>2-2</resultado>
+			</partido>
+			<partido idpartido="PAR2704">
+				<local idlocal="LOC2704" localidad="Barcelona">FC Barcelona</local>
+				<visitante idvisitante="VIS2704">Real Sociedad</visitante>
+				<resultado>1-0</resultado>
+			</partido>
+			<partido idpartido="PAR2705">
+				<local idlocal="LOC2705" localidad="Getafe">Getafe CF</local>
+				<visitante idvisitante="VIS2705">RC Celta</visitante>
+				<resultado>0-0</resultado>
+			</partido>
+
+			<partido idpartido="PAR2706">
+				<local idlocal="LOC2706" localidad="Pamplona">C.A. Osasuna</local>
+				<visitante idvisitante="VIS2706">RCD Espanyol</visitante>
+				<resultado>1-0</resultado>
+			</partido>
+			<partido idpartido="PAR2707">
+				<local idlocal="LOC2707" localidad="Valladolid">Real Valladolid</local>
+				<visitante idvisitante="VIS2707">Athletic Club</visitante>
+				<resultado>1-4</resultado>
+			</partido>
+			<partido idpartido="PAR2708">
+				<local idlocal="LOC2708" localidad="Valencia">Levante UD</local>
+				<visitante idvisitante="VIS2708">Granada CF</visitante>
+				<resultado>1-1</resultado>
+			</partido>
+			<partido idpartido="PAR2709">
+				<local idlocal="LOC2709" localidad="Valencia">Villarreal FC</local>
+				<visitante idvisitante="VIS2709">CD Leganes</visitante>
+				<resultado>1-2</resultado>
+			</partido>
+			<partido idpartido="PAR2710">
+				<local idlocal="LOC2710" localidad="Sevilla">Real Betis</local>
+				<visitante idvisitante="VIS2710">Real Madrid</visitante>
+				<resultado>2-1</resultado>
+			</partido>
+		</partidos>
+		<clasificacion>
+			<equipo_clasificacion>
+				<nombre>FC Barcelona</nombre>
+				<disputados>27</disputados>
+				<ganados>18</ganados>
+				<perdidos>5</perdidos>
+				<empatados>4</empatados>
+				<favor>63</favor>
+				<contra>31</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Real Madrid</nombre>
+				<disputados>27</disputados>
+				<ganados>16</ganados>
+				<perdidos>3</perdidos>
+				<empatados>8</empatados>
+				<favor>49</favor>
+				<contra>19</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Sevilla FC</nombre>
+				<disputados>27</disputados>
+				<ganados>13</ganados>
+				<perdidos>6</perdidos>
+				<empatados>8</empatados>
+				<favor>39</favor>
+				<contra>29</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Real Sociedad</nombre>
+				<disputados>27</disputados>
+				<ganados>14</ganados>
+				<perdidos>9</perdidos>
+				<empatados>4</empatados>
+				<favor>45</favor>
+				<contra>33</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Getafe FC</nombre>
+				<disputados>27</disputados>
+				<ganados>13</ganados>
+				<perdidos>7</perdidos>
+				<empatados>7</empatados>
+				<favor>37</favor>
+				<contra>25</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Atletico de Madrid</nombre>
+				<disputados>27</disputados>
+				<ganados>11</ganados>
+				<perdidos>4</perdidos>
+				<empatados>12</empatados>
+				<favor>31</favor>
+				<contra>21</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Valencia</nombre>
+				<disputados>27</disputados>
+				<ganados>11</ganados>
+				<perdidos>7</perdidos>
+				<empatados>9</empatados>
+				<favor>38</favor>
+				<contra>39</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Villarreal FC</nombre>
+				<disputados>27</disputados>
+				<ganados>11</ganados>
+				<perdidos>11</perdidos>
+				<empatados>5</empatados>
+				<favor>44</favor>
+				<contra>38</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Granada CF</nombre>
+				<disputados>27</disputados>
+				<ganados>11</ganados>
+				<perdidos>11</perdidos>
+				<empatados>5</empatados>
+				<favor>33</favor>
+				<contra>32</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Athletic Club</nombre>
+				<disputados>27</disputados>
+				<ganados>9</ganados>
+				<perdidos>8</perdidos>
+				<empatados>10</empatados>
+				<favor>29</favor>
+				<contra>23</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>C.A. Osasuna</nombre>
+				<disputados>27</disputados>
+				<ganados>8</ganados>
+				<perdidos>9</perdidos>
+				<empatados>10</empatados>
+				<favor>34</favor>
+				<contra>38</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Real Betis</nombre>
+				<disputados>27</disputados>
+				<ganados>8</ganados>
+				<perdidos>10</perdidos>
+				<empatados>9</empatados>
+				<favor>38</favor>
+				<contra>43</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Levante UD</nombre>
+				<disputados>27</disputados>
+				<ganados>10</ganados>
+				<perdidos>14</perdidos>
+				<empatados>3</empatados>
+				<favor>32</favor>
+				<contra>40</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>D. Alavés</nombre>
+				<disputados>27</disputados>
+				<ganados>8</ganados>
+				<perdidos>11</perdidos>
+				<empatados>8</empatados>
+				<favor>29</favor>
+				<contra>37</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>Real Valladolid</nombre>
+				<disputados>27</disputados>
+				<ganados>6</ganados>
+				<perdidos>10</perdidos>
+				<empatados>11</empatados>
+				<favor>23</favor>
+				<contra>33</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>SD Eibar</nombre>
+				<disputados>27</disputados>
+				<ganados>7</ganados>
+				<perdidos>14</perdidos>
+				<empatados>6</empatados>
+				<favor>27</favor>
+				<contra>41</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>RC Celta</nombre>
+				<disputados>27</disputados>
+				<ganados>5</ganados>
+				<perdidos>11</perdidos>
+				<empatados>11</empatados>
+				<favor>22</favor>
+				<contra>34</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>RCD Mallorca</nombre>
+				<disputados>27</disputados>
+				<ganados>7</ganados>
+				<perdidos>16</perdidos>
+				<empatados>4</empatados>
+				<favor>28</favor>
+				<contra>44</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>CD Leganés</nombre>
+				<disputados>27</disputados>
+				<ganados>5</ganados>
+				<perdidos>14</perdidos>
+				<empatados>8</empatados>
+				<favor>21</favor>
+				<contra>39</contra>
+			</equipo_clasificacion>
+			<equipo_clasificacion>
+				<nombre>RCD Espanyol</nombre>
+				<disputados>27</disputados>
+				<ganados>4</ganados>
+				<perdidos>15</perdidos>
+				<empatados>8</empatados>
+				<favor>23</favor>
+				<contra>46</contra>
+			</equipo_clasificacion>
+		</clasificacion>
+		<estadisticas>
+			<goles>
+				<nombre>Messi</nombre>
+				<numero>19</numero>
+				<equipo>FC Barcelona</equipo>
+			</goles>
+			<goles>
+				<nombre>Benzema</nombre>
+				<numero>14</numero>
+				<equipo>Real Madrid</equipo>
+			</goles>
+			<goles>
+				<nombre>Luis Suarez</nombre>
+				<numero>11</numero>
+				<equipo>FC Barcelona</equipo>
+			</goles>
+			<goles>
+				<nombre>Gerard Moreno</nombre>
+				<numero>11</numero>
+				<equipo>Villarreal FC</equipo>
+			</goles>
+			<goles>
+				<nombre>Lucas Pérez</nombre>
+				<numero>11</numero>
+				<equipo>D. Alavés</equipo>
+			</goles>
+			<goles>
+				<nombre>Roger M. S.</nombre>
+				<numero>11</numero>
+				<equipo>Levante UD</equipo>
+			</goles>
+			<goles>
+				<nombre>Lúcas Ocampos</nombre>
+				<numero>10</numero>
+				<equipo>Sevilla FC</equipo>
+			</goles>
+			<goles>
+				<nombre>Ángel</nombre>
+				<numero>10</numero>
+				<equipo>Getafe CF</equipo>
+			</goles>
+			<goles>
+				<nombre>Raúl García</nombre>
+				<numero>9</numero>
+				<equipo>Athletic Club</equipo>
+			</goles>
+			<goles>
+				<nombre>Budimir</nombre>
+				<numero>9</numero>
+				<equipo>RCD Mallorca</equipo>
+			</goles>
+
+			<remates>
+				<nombre>Messi</nombre>
+				<numero>55</numero>
+				<equipo>FC Barcelona</equipo>
+			</remates>
+			<remates>
+				<nombre>Benzema</nombre>
+				<numero>42</numero>
+				<equipo>Real Madrid</equipo>
+			</remates>
+			<remates>
+				<nombre>Iago Aspas</nombre>
+				<numero>30</numero>
+				<equipo>RC Celta</equipo>
+			</remates>
+			<remates>
+				<nombre>Luis Suarez</nombre>
+				<numero>29</numero>
+				<equipo>FC Barcelona</equipo>
+			</remates>
+			<remates>
+				<nombre>Chimy Ávila</nombre>
+				<numero>28</numero>
+				<equipo>C.A. Osasuna</equipo>
+			</remates>
+			<remates>
+				<nombre>Morata</nombre>
+				<numero>27</numero>
+				<equipo>Atlético de Madrid</equipo>
+			</remates>
+			<remates>
+				<nombre>Gerard Moreno</nombre>
+				<numero>25</numero>
+				<equipo>Villarreal FC</equipo>
+			</remates>
+			<remates>
+				<nombre>Fekir</nombre>
+				<numero>25</numero>
+				<equipo>Real Betis</equipo>
+			</remates>
+			<remates>
+				<nombre>Raul García</nombre>
+				<numero>24</numero>
+				<equipo>Athletic Club</equipo>
+			</remates>
+			<remates>
+				<nombre>Lucas Ocampos</nombre>
+				<numero>23</numero>
+				<equipo>Sevilla FC</equipo>
+			</remates>
+
+			<pases>
+				<nombre>Sergio Busquets</nombre>
+				<numero>1871</numero>
+				<equipo>FC Barcelona</equipo>
+			</pases>
+			<pases>
+				<nombre>Gerard Piqué</nombre>
+				<numero>1857</numero>
+				<equipo>FC Barcelona</equipo>
+			</pases>
+			<pases>
+				<nombre>Parejo</nombre>
+				<numero>1617</numero>
+				<equipo>Valencia CF</equipo>
+			</pases>
+			<pases>
+				<nombre>Kroos</nombre>
+				<numero>1608</numero>
+				<equipo>Real Madrid</equipo>
+			</pases>
+			<pases>
+				<nombre>Ever Banega</nombre>
+				<numero>1576</numero>
+				<equipo>Sevilla FC</equipo>
+			</pases>
+			<pases>
+				<nombre>Sergio Ramos</nombre>
+				<numero>1531</numero>
+				<equipo>Real Madrid</equipo>
+			</pases>
+			<pases>
+				<nombre>Casemiro</nombre>
+				<numero>1521</numero>
+				<equipo>Real Madrid</equipo>
+			</pases>
+			<pases>
+				<nombre>De Jong</nombre>
+				<numero>1508</numero>
+				<equipo>FC Barcelona</equipo>
+			</pases>
+			<pases>
+				<nombre>Carvajal</nombre>
+				<numero>1473</numero>
+				<equipo>Real Madrid</equipo>
+			</pases>
+			<pases>
+				<nombre>Canales</nombre>
+				<numero>1467</numero>
+				<equipo>Real Betis</equipo>
+			</pases>
+
+			<asistencias>
+				<nombre>Messi</nombre>
+				<numero>12</numero>
+				<equipo>FC Barcelona</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>Portu</nombre>
+				<numero>8</numero>
+				<equipo>Real Sociedad</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>Luis suarez</nombre>
+				<numero>7</numero>
+				<equipo>FC Barcelona</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>Rodrigo</nombre>
+				<numero>7</numero>
+				<equipo>Valencia CF</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>R. Torres</nombre>
+				<numero>7</numero>
+				<equipo>C. A. Osasuna</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>Orellana</nombre>
+				<numero>6</numero>
+				<equipo>SD Eibar</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>Oyarzabal</nombre>
+				<numero>6</numero>
+				<equipo>Real Sociedad</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>Wass</nombre>
+				<numero>6</numero>
+				<equipo>Valencia CF</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>Benzema</nombre>
+				<numero>6</numero>
+				<equipo>Real Madrid</equipo>
+			</asistencias>
+			<asistencias>
+				<nombre>S. Cazorla</nombre>
+				<numero>6</numero>
+				<equipo>Villarreal FC</equipo>
+			</asistencias>
+			<recuperaciones>
+				<nombre>Casemiro</nombre>
+				<numero>53</numero>
+				<equipo>Real Madrid</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>Bustinza</nombre>
+				<numero>48</numero>
+				<equipo>CD Leganés</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>Fernando</nombre>
+				<numero>48</numero>
+				<equipo>Sevilla CF</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>K. Olivas</nombre>
+				<numero>48</numero>
+				<equipo>Real Valladolid</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>Yeray</nombre>
+				<numero>47</numero>
+				<equipo>Athletic Club</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>Estupiñán</nombre>
+				<numero>46</numero>
+				<equipo>C.A. Osasuna</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>Gabriel Paulista</nombre>
+				<numero>42</numero>
+				<equipo>Valencia CF</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>Saúl</nombre>
+				<numero>40</numero>
+				<equipo>Atletico de Madrid</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>Maksimovic</nombre>
+				<numero>40</numero>
+				<equipo>Getafe FC</equipo>
+			</recuperaciones>
+			<recuperaciones>
+				<nombre>R. Duarte</nombre>
+				<numero>39</numero>
+				<equipo>D. Alavés</equipo>
+			</recuperaciones>
+		</estadisticas>
+
+	</jornada>
+</competicion>

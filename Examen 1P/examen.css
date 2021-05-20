@@ -1,0 +1,68 @@
+html{
+	font-size: 12pt;
+	background-color: #E0F5E8;
+}
+h2{
+	font-weight: bold;
+	font-family: arial;
+	padding-left: 3px;
+}
+.table1{
+	display: table;
+	width: 100%;
+	border-spacing: 1px;
+}
+th{
+	text-align: center;
+	background-color: lightgrey;
+	font-weight: bold;
+}
+td{
+	border:solid black 1px;
+}
+.azul{
+	text-align: center;
+	background-color: #B4F4FF ;
+}
+.violeta{
+	text-align: center;
+	background-color: #E7B4FF;
+}
+.verde{
+	text-align: center;
+	background-color: #C5F599;
+}
+.coral{
+	text-align: center;
+	background-color: coral;
+}
+.amarillo{
+	text-align: center;
+	background-color: #F5F499;
+}
+.naranja{
+	text-align: center;
+	background-color: #FFBA7A;
+}
+.par{
+	text-align: center;
+	background-color: violet;
+}
+.impar{
+	text-align: center;
+	background-color: skyblue;
+}
+.parFactura{
+	text-align: center;
+	background-color: darksalmon;
+}
+.imparFactura{
+	text-align: center;
+	background-color: beige;
+}
+
+.table2{
+	display: table;
+	width: 100%;
+	border-spacing: 1px;
+}

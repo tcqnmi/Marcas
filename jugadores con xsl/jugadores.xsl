@@ -49,8 +49,8 @@
             			<td ><xsl:value-of select="posicion" /></td>
             			<td ><xsl:value-of select="partidosjugados" /></td>
             			<td ><xsl:value-of select="minutosjugados" /></td>
-						<td ><xsl:value-of select="partidosjugadostitular" /></td>
-						<td ><xsl:value-of select="tarjetasamarillas" /></td>
+					<td ><xsl:value-of select="partidosjugadostitular" /></td>
+					<td ><xsl:value-of select="tarjetasamarillas" /></td>
             			<td ><xsl:value-of select="tarjetasrojas" /></td>
             			<td ><xsl:value-of select="asistencias" /></td>
             			<td ><xsl:value-of select="goles" /></td>
