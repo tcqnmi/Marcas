@@ -23,7 +23,8 @@
 					</tr>
 					<xsl:for-each select="tienda/productos/producto">
 					
-						<xsl:variable name="coniva">
+						<xsl:
+							ble name="coniva">
 							<xsl:choose>
 								<xsl:when test="@tipo='software' or @tipo='hardware'">
 									<xsl:value-of select="preciosiniva*1.21" />
