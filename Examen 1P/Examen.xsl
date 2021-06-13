@@ -329,7 +329,6 @@
 					<th>ID Jugador</th>
 					<th>Equipo actual</th>
 					<th>Nombre</th>
-					<th>Dorsal</th>
 					<th>Edad</th>
 					<th>Posicion</th>
 					<th>Nacionalidad</th>

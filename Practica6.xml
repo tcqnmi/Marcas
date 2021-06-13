@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<?xml-stylesheet type="text/xsl" href="Practica6.xsl"?>
+<?xml-stylesheet type="text/xsl" href="Practica_5_Ev3.xsl"?>
 
 <!DOCTYPE jugadores [
 	<!ELEMENT jugadores (jugador+)>
@@ -2024,7 +2024,7 @@
 		<asistencias>0</asistencias>
 		<goles>0</goles>
 	</jugador>
-<!--	<jugador idjugador="JUG9001">
+<jugador idjugador="JUG9001">
 		<apodo>Roger</apodo>
 		<nombre>Roger Martí</nombre>
 		<dorsal>9</dorsal>
@@ -2042,7 +2042,6 @@
 		<asistencias>4</asistencias>
 		<goles>14</goles>
 	</jugador>
-	
 	<jugador idjugador="JUG9002">
 		<apodo>José Luis</apodo>
 		<nombre>José Luis Morales</nombre>
@@ -2385,7 +2384,7 @@
 		<tarjetasrojas>6</tarjetasrojas>
 		<asistencias>11</asistencias>
 		<goles>20</goles>
-	</jugador>-->
+	</jugador>
 	
 	<jugador idjugador="JUG3001">
 		<apodo>Álvaro Negredo</apodo>
